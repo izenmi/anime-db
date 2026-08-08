@@ -1,0 +1,62 @@
+[
+  {
+    "id": "tokyo-anime-award",
+    "name": "東京アニメアワード",
+    "organizer": "東京アニメアワードフェスティバル実行委員会",
+    "description": "東京国際アニメフェア(2002年〜)のコンペティションを前身とし、2014年から東京アニメアワードフェスティバル(TAAF)として開催されている顕彰事業。アニメ オブ ザ イヤー部門でその年を代表する作品を選出する。",
+    "firstYear": 2002,
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/東京アニメアワード"
+    },
+    "sourceNote": "Wikipedia日本語版「東京アニメアワード」「東京アニメアワードフェスティバル」を参照(2026-08-08)。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "animage-grand-prix",
+    "name": "アニメグランプリ",
+    "organizer": "徳間書店『アニメージュ』",
+    "description": "アニメ誌『アニメージュ』が1979年から実施している読者投票による年間グランプリ。作品部門のほかキャラクター部門・声優部門などがある、最も歴史の長いアニメ賞のひとつ。",
+    "firstYear": 1979,
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/アニメグランプリ"
+    },
+    "sourceNote": "Wikipedia日本語版「アニメグランプリ」を参照(2026-08-08)。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "newtype-anime-award",
+    "name": "ニュータイプアニメアワード",
+    "organizer": "KADOKAWA『月刊ニュータイプ』",
+    "description": "アニメ誌『月刊ニュータイプ』の読者投票による年間アワード。2011年からマチ★アソビで発表されている。作品賞(TV・劇場)のほかキャラクター賞・声優賞などがある。",
+    "firstYear": 2011,
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/ニュータイプアニメアワード"
+    },
+    "sourceNote": "Wikipedia日本語版「ニュータイプアニメアワード」を参照(2026-08-08)。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "japan-media-arts-festival",
+    "name": "文化庁メディア芸術祭 アニメーション部門",
+    "organizer": "文化庁",
+    "description": "1997年度から2022年度(第25回)まで開催された文化庁メディア芸術祭のアニメーション部門。大賞・優秀賞などを選出していた。第25回をもって終了。",
+    "firstYear": 1997,
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/文化庁メディア芸術祭"
+    },
+    "sourceNote": "Wikipedia日本語版「文化庁メディア芸術祭」を参照(2026-08-08)。2022年度で終了。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "crunchyroll-anime-awards",
+    "name": "クランチロール・アニメアワード",
+    "organizer": "Crunchyroll",
+    "description": "アニメ配信サービスCrunchyrollが2017年から実施している国際的なアニメ賞。ファン投票と審査員により、アニメ・オブ・ザ・イヤーをはじめ多数の部門賞を選出する。",
+    "firstYear": 2017,
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/クランチロール・アニメアワード"
+    },
+    "sourceNote": "Wikipedia日本語版「クランチロール・アニメアワード」を参照(2026-08-08)。",
+    "updatedAt": "2026-08-08"
+  }
+]

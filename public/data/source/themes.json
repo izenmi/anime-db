@@ -1,0 +1,134 @@
+[
+  {
+    "id": "fantasy",
+    "name": "ファンタジー"
+  },
+  {
+    "id": "dark-fantasy",
+    "name": "ダークファンタジー"
+  },
+  {
+    "id": "isekai",
+    "name": "異世界"
+  },
+  {
+    "id": "sci-fi",
+    "name": "SF"
+  },
+  {
+    "id": "robot-mecha",
+    "name": "ロボット・メカ"
+  },
+  {
+    "id": "school",
+    "name": "学園"
+  },
+  {
+    "id": "youth",
+    "name": "青春"
+  },
+  {
+    "id": "club-activities",
+    "name": "部活"
+  },
+  {
+    "id": "romance",
+    "name": "恋愛"
+  },
+  {
+    "id": "romcom",
+    "name": "ラブコメ"
+  },
+  {
+    "id": "slice-of-life",
+    "name": "日常"
+  },
+  {
+    "id": "comedy",
+    "name": "コメディ"
+  },
+  {
+    "id": "action",
+    "name": "アクション"
+  },
+  {
+    "id": "battle",
+    "name": "バトル"
+  },
+  {
+    "id": "sports",
+    "name": "スポーツ"
+  },
+  {
+    "id": "music",
+    "name": "音楽"
+  },
+  {
+    "id": "idol",
+    "name": "アイドル"
+  },
+  {
+    "id": "horror",
+    "name": "ホラー"
+  },
+  {
+    "id": "suspense",
+    "name": "サスペンス"
+  },
+  {
+    "id": "mystery",
+    "name": "ミステリー"
+  },
+  {
+    "id": "magical-girl",
+    "name": "魔法少女"
+  },
+  {
+    "id": "hero",
+    "name": "ヒーロー"
+  },
+  {
+    "id": "work",
+    "name": "お仕事もの"
+  },
+  {
+    "id": "cooking",
+    "name": "料理・グルメ"
+  },
+  {
+    "id": "journey",
+    "name": "旅"
+  },
+  {
+    "id": "war",
+    "name": "戦争"
+  },
+  {
+    "id": "history",
+    "name": "歴史・時代もの"
+  },
+  {
+    "id": "ensemble",
+    "name": "群像劇"
+  },
+  {
+    "id": "family",
+    "name": "家族"
+  },
+  {
+    "id": "tearjerker",
+    "name": "泣ける"
+  },
+  {
+    "id": "plot-twist",
+    "name": "どんでん返し",
+    "description": "物語の前提が覆る大きな仕掛けがある作品。",
+    "spoiler": true
+  },
+  {
+    "id": "hidden-identity",
+    "name": "意外な正体",
+    "description": "登場人物の正体が物語の鍵になる作品。",
+    "spoiler": true
+  }
+]

@@ -1,0 +1,1317 @@
+[
+  {
+    "id": "shingeki-no-kyojin",
+    "title": "進撃の巨人",
+    "titleKana": "しんげきのきょじん",
+    "directorIds": [
+      "araki-tetsuro"
+    ],
+    "seriesComposerIds": [
+      "kobayashi-yasuko"
+    ],
+    "studioIds": [
+      "wit-studio"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "kaji-yuki",
+        "character": "エレン・イェーガー"
+      },
+      {
+        "voiceActorId": "ishikawa-yui",
+        "character": "ミカサ・アッカーマン"
+      },
+      {
+        "voiceActorId": "inoue-marina",
+        "character": "アルミン・アルレルト"
+      }
+    ],
+    "themeIds": [
+      "dark-fantasy",
+      "battle",
+      "action",
+      "war"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2013,
+      "quarter": "spring"
+    },
+    "originalType": "manga",
+    "status": "completed",
+    "synopsis": "人類は突如現れた巨人によって滅亡の淵に立たされ、巨大な壁の内側でかろうじて生き延びていた。壁外への憧れを抱く少年エレンは、壁を越えて襲来した超大型巨人によって故郷と母を失い、巨人を一匹残らず駆逐することを誓って調査兵団の門を叩く。幼なじみのミカサやアルミンとともに、人類と巨人の絶望的な戦いに身を投じていく。",
+    "anilistId": 16498,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:16498)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 25,
+    "broadcastNote": "Season 2・Season 3・The Final Seasonと続き完結した(The Final Season以降はMAPPA制作)。",
+    "relatedComicUrl": "https://izenmi.github.io/manga-db/works/shingeki-no-kyojin"
+  },
+  {
+    "id": "kimetsu-no-yaiba",
+    "title": "鬼滅の刃",
+    "titleKana": "きめつのやいば",
+    "directorIds": [
+      "sotozaki-haruo"
+    ],
+    "seriesComposerIds": [],
+    "studioIds": [
+      "ufotable"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "hanae-natsuki",
+        "character": "竈門炭治郎"
+      },
+      {
+        "voiceActorId": "kito-akari",
+        "character": "竈門禰豆子"
+      },
+      {
+        "voiceActorId": "shimono-hiro",
+        "character": "我妻善逸"
+      },
+      {
+        "voiceActorId": "matsuoka-yoshitsugu",
+        "character": "嘴平伊之助"
+      }
+    ],
+    "themeIds": [
+      "battle",
+      "action",
+      "history",
+      "family"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2019,
+      "quarter": "spring"
+    },
+    "originalType": "manga",
+    "status": "completed",
+    "synopsis": "大正時代。炭売りの少年・竈門炭治郎は、家族を鬼に惨殺され、唯一生き残った妹の禰豆子も鬼と化してしまう。妹を人間に戻す方法を求めて、炭治郎は鬼を狩る剣士の組織「鬼殺隊」に入隊する。呼吸法を駆使した剣術で強敵に立ち向かいながら、兄妹の絆と仲間との出会いを描く和風剣戟活劇。",
+    "anilistId": 101922,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:101922)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 26,
+    "broadcastNote": "劇場版『無限列車編』を経て遊郭編・刀鍛冶の里編・柱稽古編とシリーズが続いている。",
+    "relatedComicUrl": "https://izenmi.github.io/manga-db/works/kimetsu-no-yaiba"
+  },
+  {
+    "id": "jujutsu-kaisen",
+    "title": "呪術廻戦",
+    "titleKana": "じゅじゅつかいせん",
+    "directorIds": [
+      "park-sung-hoo"
+    ],
+    "seriesComposerIds": [
+      "seko-hiroshi"
+    ],
+    "studioIds": [
+      "mappa"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "enoki-junya",
+        "character": "虎杖悠仁"
+      },
+      {
+        "voiceActorId": "uchida-yuma",
+        "character": "伏黒恵"
+      },
+      {
+        "voiceActorId": "seto-asami",
+        "character": "釘崎野薔薇"
+      },
+      {
+        "voiceActorId": "nakamura-yuichi",
+        "character": "五条悟"
+      }
+    ],
+    "themeIds": [
+      "battle",
+      "action",
+      "school",
+      "dark-fantasy"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2020,
+      "quarter": "fall"
+    },
+    "originalType": "manga",
+    "status": "ongoing",
+    "synopsis": "驚異的な身体能力を持つ高校生・虎杖悠仁は、祖父の遺言を胸に日々を過ごしていたが、呪いの王・両面宿儺の指を巡る事件に巻き込まれ、自らその指を取り込んでしまう。宿儺の器となった虎杖は、最強の呪術師・五条悟に導かれて東京呪術高等専門学校に編入し、人の負の感情から生まれる「呪霊」との戦いに身を投じる。",
+    "anilistId": 113415,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:113415)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 24,
+    "broadcastNote": "第2期「懐玉・玉折」「渋谷事変」が放送され、続編の制作も進んでいる。",
+    "relatedComicUrl": "https://izenmi.github.io/manga-db/works/jujutsu-kaisen"
+  },
+  {
+    "id": "sword-art-online",
+    "title": "ソードアート・オンライン",
+    "titleKana": "そーどあーとおんらいん",
+    "directorIds": [
+      "ito-tomohiko"
+    ],
+    "seriesComposerIds": [],
+    "studioIds": [
+      "a-1-pictures"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "matsuoka-yoshitsugu",
+        "character": "キリト"
+      },
+      {
+        "voiceActorId": "tomatsu-haruka",
+        "character": "アスナ"
+      },
+      {
+        "voiceActorId": "taketatsu-ayana",
+        "character": "リーファ"
+      }
+    ],
+    "themeIds": [
+      "sci-fi",
+      "action",
+      "fantasy",
+      "romance"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2012,
+      "quarter": "summer"
+    },
+    "originalType": "lightnovel",
+    "status": "completed",
+    "synopsis": "2022年、世界初の完全没入型VRオンラインゲーム「ソードアート・オンライン」の正式サービスが開始される。しかし開発者の手によってログアウトは封じられ、ゲーム内での死は現実の死を意味するデスゲームと化した。ソロプレイヤーのキリトは、攻略の最前線でアスナら仲間と出会いながら、生還を懸けて浮遊城アインクラッドの頂を目指す。",
+    "anilistId": 11757,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:11757)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 25,
+    "broadcastNote": "第2期以降、アリシゼーション編や劇場版など多数の続編が制作された。",
+    "relatedNovelUrl": "https://izenmi.github.io/ranobe-db/works/sword-art-online"
+  },
+  {
+    "id": "re-zero",
+    "title": "Re:ゼロから始める異世界生活",
+    "titleKana": "りぜろからはじめるいせかいせいかつ",
+    "directorIds": [
+      "watanabe-masaharu"
+    ],
+    "seriesComposerIds": [
+      "yokotani-masahiro"
+    ],
+    "studioIds": [
+      "white-fox"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "kobayashi-yusuke",
+        "character": "ナツキ・スバル"
+      },
+      {
+        "voiceActorId": "takahashi-rie",
+        "character": "エミリア"
+      },
+      {
+        "voiceActorId": "minase-inori",
+        "character": "レム"
+      },
+      {
+        "voiceActorId": "murakawa-rie",
+        "character": "ラム"
+      }
+    ],
+    "themeIds": [
+      "isekai",
+      "fantasy",
+      "suspense"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2016,
+      "quarter": "spring"
+    },
+    "originalType": "lightnovel",
+    "status": "ongoing",
+    "synopsis": "コンビニ帰りに突然異世界へ召喚された少年ナツキ・スバル。無力な彼に与えられた唯一の力は、死ぬと時間を巻き戻して人生をやり直す「死に戻り」だった。銀髪の少女エミリアを救うため、スバルは何度も死の運命に立ち向かい、絶望を重ねながらも足掻き続ける。異世界ファンタジーに時間反復の緊張感を持ち込んだ物語。",
+    "anilistId": 21355,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:21355)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 25,
+    "broadcastNote": "第2期・第3期が制作されている。",
+    "relatedNovelUrl": "https://izenmi.github.io/ranobe-db/works/re-zero"
+  },
+  {
+    "id": "steins-gate",
+    "title": "シュタインズ・ゲート",
+    "titleKana": "しゅたいんずげーと",
+    "directorIds": [
+      "sato-takuya",
+      "hamasaki-hiroshi"
+    ],
+    "seriesComposerIds": [
+      "hanada-jukki"
+    ],
+    "studioIds": [
+      "white-fox"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "miyano-mamoru",
+        "character": "岡部倫太郎"
+      },
+      {
+        "voiceActorId": "imai-asami",
+        "character": "牧瀬紅莉栖"
+      },
+      {
+        "voiceActorId": "hanazawa-kana",
+        "character": "椎名まゆり"
+      },
+      {
+        "voiceActorId": "seki-tomokazu",
+        "character": "橋田至"
+      },
+      {
+        "voiceActorId": "tamura-yukari",
+        "character": "阿万音鈴羽"
+      }
+    ],
+    "themeIds": [
+      "sci-fi",
+      "suspense",
+      "romance"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2011,
+      "quarter": "spring"
+    },
+    "originalType": "game",
+    "status": "completed",
+    "synopsis": "秋葉原で「未来ガジェット研究所」を名乗る大学生・岡部倫太郎は、偶然にも過去へメールを送れる装置を発明してしまう。仲間たちと軽い気持ちで過去への干渉を繰り返すうち、世界は少しずつ、しかし取り返しのつかない形で変わり始める。改変の代償に直面した岡部は、大切な人々を救うため孤独な戦いを始める。同名ゲームが原作。",
+    "anilistId": 9253,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:9253)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 24,
+    "broadcastNote": "劇場版や続編『シュタインズ・ゲート ゼロ』が制作された。"
+  },
+  {
+    "id": "violet-evergarden",
+    "title": "ヴァイオレット・エヴァーガーデン",
+    "titleKana": "ゔぁいおれっとえゔぁーがーでん",
+    "directorIds": [
+      "ishidate-taichi"
+    ],
+    "seriesComposerIds": [
+      "yoshida-reiko"
+    ],
+    "studioIds": [
+      "kyoto-animation"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "ishikawa-yui",
+        "character": "ヴァイオレット・エヴァーガーデン"
+      }
+    ],
+    "themeIds": [
+      "war",
+      "work",
+      "tearjerker"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2018,
+      "quarter": "winter"
+    },
+    "originalType": "lightnovel",
+    "status": "completed",
+    "synopsis": "大陸を二分した大戦が終わり、戦争の道具として生きてきた少女ヴァイオレットは、手紙の代筆業「自動手記人形」として新しい人生を歩み始める。依頼人の想いを言葉にする仕事を重ねるうちに、彼女は戦場で自分に向けられた「あいしてる」という言葉の意味を少しずつ探っていく。手紙が結ぶ人々の情感を描く連作的なドラマ。",
+    "anilistId": 21827,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:21827)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 13,
+    "broadcastNote": "外伝と劇場版が制作された。",
+    "relatedNovelUrl": "https://izenmi.github.io/ranobe-db/works/violet-evergarden"
+  },
+  {
+    "id": "spy-x-family",
+    "title": "SPY×FAMILY",
+    "titleKana": "すぱいふぁみりー",
+    "directorIds": [
+      "furuhashi-kazuhiro"
+    ],
+    "seriesComposerIds": [
+      "furuhashi-kazuhiro"
+    ],
+    "studioIds": [
+      "wit-studio",
+      "cloverworks"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "eguchi-takuya",
+        "character": "ロイド・フォージャー"
+      },
+      {
+        "voiceActorId": "hayami-saori",
+        "character": "ヨル・フォージャー"
+      },
+      {
+        "voiceActorId": "tanezaki-atsumi",
+        "character": "アーニャ・フォージャー"
+      }
+    ],
+    "themeIds": [
+      "comedy",
+      "action",
+      "family",
+      "school"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2022,
+      "quarter": "spring"
+    },
+    "originalType": "manga",
+    "status": "ongoing",
+    "synopsis": "敵国の要人に接近する任務を受けた凄腕スパイ「黄昏」は、体裁のため即席の家族を用意することになる。しかし引き取った娘アーニャは心を読める超能力者、妻ヨルの正体は殺し屋だった。互いの秘密を知らないまま始まった仮初めの家族は、任務と日常のドタバタを重ねるうちに、次第に本物の家族らしくなっていく。",
+    "anilistId": 140960,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:140960)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 12,
+    "broadcastNote": "Season 2と劇場版が制作された。",
+    "relatedComicUrl": "https://izenmi.github.io/manga-db/works/spy-x-family"
+  },
+  {
+    "id": "haikyu",
+    "title": "ハイキュー!!",
+    "titleKana": "はいきゅー",
+    "directorIds": [
+      "mitsunaka-susumu"
+    ],
+    "seriesComposerIds": [
+      "kishimoto-taku"
+    ],
+    "studioIds": [
+      "production-ig"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "murase-ayumu",
+        "character": "日向翔陽"
+      },
+      {
+        "voiceActorId": "ishikawa-kaito",
+        "character": "影山飛雄"
+      },
+      {
+        "voiceActorId": "okamoto-nobuhiko",
+        "character": "西谷夕"
+      },
+      {
+        "voiceActorId": "nazuka-kaori",
+        "character": "清水潔子"
+      }
+    ],
+    "themeIds": [
+      "sports",
+      "school",
+      "youth",
+      "club-activities"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2014,
+      "quarter": "spring"
+    },
+    "originalType": "manga",
+    "status": "ongoing",
+    "synopsis": "小柄ながら驚異的な跳躍力を持つ日向翔陽は、中学最後の大会で「コート上の王様」と呼ばれる天才セッター影山飛雄に敗れる。雪辱を誓って進学した烏野高校で、日向はその影山とチームメイトになってしまう。反発し合う二人は変則速攻を武器に成長し、かつて強豪と呼ばれた烏野排球部の全国への道を切り開いていく。",
+    "anilistId": 20464,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:20464)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 25,
+    "broadcastNote": "第4期まで放送され、劇場版『ゴミ捨て場の決戦』が公開された。",
+    "relatedComicUrl": "https://izenmi.github.io/manga-db/works/haikyu"
+  },
+  {
+    "id": "shigatsu-wa-kimi-no-uso",
+    "title": "四月は君の嘘",
+    "titleKana": "しがつはきみのうそ",
+    "directorIds": [
+      "ishiguro-kyohei"
+    ],
+    "seriesComposerIds": [
+      "yoshioka-takao"
+    ],
+    "studioIds": [
+      "a-1-pictures"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "hanae-natsuki",
+        "character": "有馬公生"
+      },
+      {
+        "voiceActorId": "taneda-risa",
+        "character": "宮園かをり"
+      },
+      {
+        "voiceActorId": "sakura-ayane",
+        "character": "澤部椿"
+      },
+      {
+        "voiceActorId": "osaka-ryota",
+        "character": "渡亮太"
+      }
+    ],
+    "themeIds": [
+      "music",
+      "youth",
+      "romance",
+      "school",
+      "tearjerker"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2014,
+      "quarter": "fall"
+    },
+    "originalType": "manga",
+    "status": "completed",
+    "synopsis": "母の死をきっかけにピアノの音が聞こえなくなった元神童・有馬公生は、モノトーンの日々を送っていた。中学3年の春、自由奔放なヴァイオリニスト・宮園かをりと出会ったことで、公生の世界は色彩を取り戻し始める。彼女に引っ張られるように再び舞台へ向かう公生と、かをりが抱える秘密を描く音楽青春ストーリー。",
+    "anilistId": 20665,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:20665)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 22,
+    "relatedComicUrl": "https://izenmi.github.io/manga-db/works/shigatsu-wa-kimi-no-uso"
+  },
+  {
+    "id": "boku-dake-ga-inai-machi",
+    "title": "僕だけがいない街",
+    "titleKana": "ぼくだけがいないまち",
+    "directorIds": [
+      "ito-tomohiko"
+    ],
+    "seriesComposerIds": [],
+    "studioIds": [
+      "a-1-pictures"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "mitsushima-shinnosuke",
+        "character": "藤沼悟"
+      },
+      {
+        "voiceActorId": "yuki-aoi",
+        "character": "雛月加代"
+      }
+    ],
+    "themeIds": [
+      "suspense",
+      "mystery",
+      "sci-fi"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2016,
+      "quarter": "winter"
+    },
+    "originalType": "manga",
+    "status": "completed",
+    "synopsis": "売れない漫画家・藤沼悟は、身近で悪いことが起きる直前まで時間が巻き戻る「再上映(リバイバル)」という現象を持っていた。母が殺された事件をきっかけに、悟は18年前の小学生時代まで遡り、当時起きた同級生・雛月加代の誘拐殺人事件をやり直すことになる。過去と現在を往復しながら真犯人に迫るタイムリープサスペンス。",
+    "anilistId": 21234,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:21234)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 12,
+    "relatedComicUrl": "https://izenmi.github.io/manga-db/works/boku-dake-ga-inai-machi"
+  },
+  {
+    "id": "toradora",
+    "title": "とらドラ!",
+    "titleKana": "とらどら",
+    "directorIds": [
+      "nagai-tatsuyuki"
+    ],
+    "seriesComposerIds": [
+      "okada-mari"
+    ],
+    "studioIds": [
+      "jc-staff"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "majima-junji",
+        "character": "高須竜児"
+      },
+      {
+        "voiceActorId": "kugimiya-rie",
+        "character": "逢坂大河"
+      },
+      {
+        "voiceActorId": "horie-yui",
+        "character": "櫛枝実乃梨"
+      },
+      {
+        "voiceActorId": "kitamura-eri",
+        "character": "川嶋亜美"
+      },
+      {
+        "voiceActorId": "nojima-hirofumi",
+        "character": "北村祐作"
+      }
+    ],
+    "themeIds": [
+      "romcom",
+      "school",
+      "youth"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2008,
+      "quarter": "fall"
+    },
+    "originalType": "lightnovel",
+    "status": "completed",
+    "synopsis": "目つきの悪さで不良に間違われる高須竜児と、小柄で凶暴な「手乗りタイガー」こと逢坂大河。互いの親友に片想いしていると知った二人は、恋を成就させるための共同戦線を張ることになる。ぶつかり合いながら支え合う奇妙な関係は、やがて周囲を巻き込み、本当の気持ちに向き合う青春ラブコメの王道を駆け抜けていく。",
+    "anilistId": 4224,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:4224)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 25,
+    "relatedNovelUrl": "https://izenmi.github.io/ranobe-db/works/toradora"
+  },
+  {
+    "id": "bakemonogatari",
+    "title": "化物語",
+    "titleKana": "ばけものがたり",
+    "directorIds": [
+      "shinbo-akiyuki"
+    ],
+    "seriesComposerIds": [
+      "higashi-fuyako",
+      "shinbo-akiyuki"
+    ],
+    "studioIds": [
+      "shaft"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "kamiya-hiroshi",
+        "character": "阿良々木暦"
+      },
+      {
+        "voiceActorId": "saito-chiwa",
+        "character": "戦場ヶ原ひたぎ"
+      },
+      {
+        "voiceActorId": "kato-emiri",
+        "character": "八九寺真宵"
+      },
+      {
+        "voiceActorId": "sawashiro-miyuki",
+        "character": "神原駿河"
+      },
+      {
+        "voiceActorId": "hanazawa-kana",
+        "character": "千石撫子"
+      }
+    ],
+    "themeIds": [
+      "fantasy",
+      "romance",
+      "comedy"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2009,
+      "quarter": "summer"
+    },
+    "originalType": "lightnovel",
+    "status": "completed",
+    "synopsis": "吸血鬼の後遺症を抱える高校生・阿良々木暦は、「重さ」を失った少女・戦場ヶ原ひたぎと出会ったことをきっかけに、蟹や蝸牛、猿といった「怪異」に憑かれた少女たちの事件に関わっていく。会話劇を主体にした独特の語り口と映像演出で、怪異を通して人の心の在り様を描く、西尾維新の小説を原作とするシリーズ第1作。",
+    "anilistId": 5081,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:5081)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 15,
+    "seriesName": "〈物語〉シリーズ",
+    "broadcastNote": "〈物語〉シリーズとして多数の続編が制作されている。",
+    "relatedNovelUrl": "https://izenmi.github.io/ranobe-db/works/bakemonogatari"
+  },
+  {
+    "id": "code-geass",
+    "title": "コードギアス 反逆のルルーシュ",
+    "titleKana": "こーどぎあすはんぎゃくのるるーしゅ",
+    "directorIds": [
+      "taniguchi-goro"
+    ],
+    "seriesComposerIds": [
+      "okouchi-ichiro"
+    ],
+    "studioIds": [
+      "sunrise"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "fukuyama-jun",
+        "character": "ルルーシュ・ランペルージ"
+      },
+      {
+        "voiceActorId": "sakurai-takahiro",
+        "character": "枢木スザク"
+      },
+      {
+        "voiceActorId": "yukana",
+        "character": "C.C."
+      },
+      {
+        "voiceActorId": "koshimizu-ami",
+        "character": "紅月カレン"
+      }
+    ],
+    "themeIds": [
+      "robot-mecha",
+      "war",
+      "action",
+      "school"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2006,
+      "quarter": "fall"
+    },
+    "originalType": "original",
+    "status": "completed",
+    "synopsis": "神聖ブリタニア帝国に占領され「エリア11」と呼ばれる日本。亡国の皇子ルルーシュは、謎の少女C.C.から絶対遵守の力「ギアス」を授かる。仮面の男ゼロとして抵抗組織を率いるルルーシュは、帝国への復讐と妹ナナリーのための世界を目指して知略を巡らせるが、親友スザクとは敵として対峙することになる。",
+    "anilistId": 1575,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:1575)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 25,
+    "broadcastNote": "続編『反逆のルルーシュR2』で完結し、劇場版などの展開も行われた。"
+  },
+  {
+    "id": "madoka-magica",
+    "title": "魔法少女まどか☆マギカ",
+    "titleKana": "まほうしょうじょまどかまぎか",
+    "directorIds": [
+      "shinbo-akiyuki"
+    ],
+    "seriesComposerIds": [
+      "urobuchi-gen"
+    ],
+    "studioIds": [
+      "shaft"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "yuki-aoi",
+        "character": "鹿目まどか"
+      },
+      {
+        "voiceActorId": "saito-chiwa",
+        "character": "暁美ほむら"
+      },
+      {
+        "voiceActorId": "mizuhashi-kaori",
+        "character": "巴マミ"
+      },
+      {
+        "voiceActorId": "kitamura-eri",
+        "character": "美樹さやか"
+      },
+      {
+        "voiceActorId": "nonaka-ai",
+        "character": "佐倉杏子"
+      }
+    ],
+    "themeIds": [
+      "magical-girl",
+      "dark-fantasy",
+      "suspense"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2011,
+      "quarter": "winter"
+    },
+    "originalType": "original",
+    "status": "completed",
+    "synopsis": "中学2年生の鹿目まどかは、不思議な生き物キュゥべえから「願いをひとつ叶える代わりに魔法少女になってほしい」と契約を持ちかけられる。憧れと戸惑いの中で魔法少女たちの戦いに触れていくまどかだが、転校生・暁美ほむらは頑なに契約を止めようとする。魔法少女という存在の意味を問い直し、大きな反響を呼んだオリジナル作品。",
+    "anilistId": 9756,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:9756)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 12,
+    "broadcastNote": "総集編2部作と完全新作の劇場版『[新編]叛逆の物語』が制作された。"
+  },
+  {
+    "id": "suzumiya-haruhi",
+    "title": "涼宮ハルヒの憂鬱",
+    "titleKana": "すずみやはるひのゆううつ",
+    "directorIds": [
+      "ishihara-tatsuya"
+    ],
+    "seriesComposerIds": [],
+    "studioIds": [
+      "kyoto-animation"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "sugita-tomokazu",
+        "character": "キョン"
+      },
+      {
+        "voiceActorId": "hirano-aya",
+        "character": "涼宮ハルヒ"
+      },
+      {
+        "voiceActorId": "chihara-minori",
+        "character": "長門有希"
+      },
+      {
+        "voiceActorId": "goto-yuko",
+        "character": "朝比奈みくる"
+      },
+      {
+        "voiceActorId": "ono-daisuke",
+        "character": "古泉一樹"
+      }
+    ],
+    "themeIds": [
+      "school",
+      "sci-fi",
+      "comedy",
+      "youth"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2006,
+      "quarter": "spring"
+    },
+    "originalType": "lightnovel",
+    "status": "completed",
+    "synopsis": "「ただの人間には興味ありません」と宣言する少女・涼宮ハルヒに巻き込まれ、平凡な男子高校生キョンは謎の部活「SOS団」に入団させられる。集められた部員は、実は宇宙人・未来人・超能力者。世界を無自覚に改変しうるハルヒを退屈させないため、キョンたちの奇妙な日常が始まる。時系列シャッフル放送でも話題を呼んだ。",
+    "anilistId": 849,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:849)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 14,
+    "broadcastNote": "2009年に新作エピソードを加えた全28話版が放送され、劇場版『涼宮ハルヒの消失』が制作された。",
+    "relatedNovelUrl": "https://izenmi.github.io/ranobe-db/works/suzumiya-haruhi"
+  },
+  {
+    "id": "k-on",
+    "title": "けいおん!",
+    "titleKana": "けいおん",
+    "directorIds": [
+      "yamada-naoko"
+    ],
+    "seriesComposerIds": [
+      "yoshida-reiko"
+    ],
+    "studioIds": [
+      "kyoto-animation"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "toyosaki-aki",
+        "character": "平沢唯"
+      },
+      {
+        "voiceActorId": "hikasa-yoko",
+        "character": "秋山澪"
+      },
+      {
+        "voiceActorId": "sato-satomi",
+        "character": "田井中律"
+      },
+      {
+        "voiceActorId": "kotobuki-minako",
+        "character": "琴吹紬"
+      },
+      {
+        "voiceActorId": "taketatsu-ayana",
+        "character": "中野梓"
+      }
+    ],
+    "themeIds": [
+      "music",
+      "school",
+      "slice-of-life",
+      "club-activities",
+      "comedy"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2009,
+      "quarter": "spring"
+    },
+    "originalType": "manga",
+    "status": "completed",
+    "synopsis": "楽器経験ゼロの平沢唯は、勘違いから桜が丘高校の軽音部に入部してしまう。廃部寸前だった軽音部は、唯・澪・律・紬の4人で再出発し、お茶とお菓子を楽しみながらも少しずつバンド「放課後ティータイム」として形になっていく。ゆるやかな部活の日常と演奏シーンで人気を集め、その後の日常系作品に大きな影響を与えた。",
+    "anilistId": 5680,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:5680)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 13,
+    "broadcastNote": "第2期『けいおん!!』と劇場版が制作された。",
+    "relatedComicUrl": "https://izenmi.github.io/manga-db/works/k-on"
+  },
+  {
+    "id": "hyouka",
+    "title": "氷菓",
+    "titleKana": "ひょうか",
+    "directorIds": [
+      "takemoto-yasuhiro"
+    ],
+    "seriesComposerIds": [
+      "gato-shoji"
+    ],
+    "studioIds": [
+      "kyoto-animation"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "nakamura-yuichi",
+        "character": "折木奉太郎"
+      },
+      {
+        "voiceActorId": "sato-satomi",
+        "character": "千反田える"
+      },
+      {
+        "voiceActorId": "sakaguchi-daisuke",
+        "character": "福部里志"
+      },
+      {
+        "voiceActorId": "kayano-ai",
+        "character": "伊原摩耶花"
+      }
+    ],
+    "themeIds": [
+      "mystery",
+      "school",
+      "youth",
+      "club-activities"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2012,
+      "quarter": "spring"
+    },
+    "originalType": "novel",
+    "status": "completed",
+    "synopsis": "「やらなくてもいいことなら、やらない」が信条の省エネ主義者・折木奉太郎は、姉の命令で廃部寸前の古典部に入部する。そこで出会った好奇心の塊のような少女・千反田えるに「わたし、気になります」と迫られ、学校生活に潜む小さな謎を次々と解き明かすことになる。米澤穂信の〈古典部〉シリーズを原作とする青春ミステリー。",
+    "anilistId": 12189,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:12189)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 22,
+    "seriesName": "〈古典部〉シリーズ",
+    "relatedMysteryUrl": "https://izenmi.github.io/mystery-db/works/hyoka"
+  },
+  {
+    "id": "evangelion",
+    "title": "新世紀エヴァンゲリオン",
+    "titleKana": "しんせいきえゔぁんげりおん",
+    "directorIds": [
+      "anno-hideaki"
+    ],
+    "seriesComposerIds": [],
+    "studioIds": [
+      "gainax",
+      "tatsunoko"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "ogata-megumi",
+        "character": "碇シンジ"
+      },
+      {
+        "voiceActorId": "hayashibara-megumi",
+        "character": "綾波レイ"
+      },
+      {
+        "voiceActorId": "miyamura-yuko",
+        "character": "惣流・アスカ・ラングレー"
+      },
+      {
+        "voiceActorId": "mitsuishi-kotono",
+        "character": "葛城ミサト"
+      }
+    ],
+    "themeIds": [
+      "robot-mecha",
+      "sci-fi",
+      "suspense"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 1995,
+      "quarter": "fall"
+    },
+    "originalType": "original",
+    "status": "completed",
+    "synopsis": "大災害「セカンドインパクト」から15年後の第3新東京市。14歳の碇シンジは、疎遠だった父に呼び出され、謎の敵「使徒」と戦う汎用人型決戦兵器エヴァンゲリオンのパイロットに任命される。戦いを重ねるほどに登場人物たちの心の傷が浮かび上がり、物語は人類補完計画という謎へと収束していく。社会現象を巻き起こした作品。",
+    "anilistId": 30,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:30)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 26,
+    "broadcastNote": "旧劇場版に加え、2007年からは新劇場版シリーズが制作され2021年に完結した。"
+  },
+  {
+    "id": "cowboy-bebop",
+    "title": "カウボーイビバップ",
+    "titleKana": "かうぼーいびばっぷ",
+    "directorIds": [
+      "watanabe-shinichiro"
+    ],
+    "seriesComposerIds": [
+      "nobumoto-keiko"
+    ],
+    "studioIds": [
+      "sunrise"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "yamadera-koichi",
+        "character": "スパイク・スピーゲル"
+      },
+      {
+        "voiceActorId": "ishizuka-unsho",
+        "character": "ジェット・ブラック"
+      },
+      {
+        "voiceActorId": "hayashibara-megumi",
+        "character": "フェイ・ヴァレンタイン"
+      },
+      {
+        "voiceActorId": "tada-aoi",
+        "character": "エド"
+      }
+    ],
+    "themeIds": [
+      "sci-fi",
+      "action",
+      "journey"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 1998,
+      "quarter": "spring"
+    },
+    "originalType": "original",
+    "status": "completed",
+    "synopsis": "2071年、人類が太陽系に生活圏を広げた時代。宇宙船ビバップ号を根城にする賞金稼ぎのスパイクとジェットは、その日暮らしで賞金首を追っていた。謎めいた女フェイ、天才ハッカーの少女エド、データ犬アインが加わり、一話完結の追跡劇が続いていく。ジャズを基調とした音楽と映像のセンスで国内外に熱心なファンを持つ。",
+    "anilistId": 1,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:1)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 26,
+    "broadcastNote": "劇場版『天国の扉』が制作された。"
+  },
+  {
+    "id": "kimi-no-na-wa",
+    "title": "君の名は。",
+    "titleKana": "きみのなは",
+    "directorIds": [
+      "shinkai-makoto"
+    ],
+    "seriesComposerIds": [],
+    "studioIds": [
+      "comix-wave-films"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "kamishiraishi-mone",
+        "character": "宮水三葉"
+      },
+      {
+        "voiceActorId": "kamiki-ryunosuke",
+        "character": "立花瀧"
+      }
+    ],
+    "themeIds": [
+      "romance",
+      "youth",
+      "fantasy",
+      "tearjerker"
+    ],
+    "format": "movie",
+    "season": {
+      "year": 2016,
+      "quarter": "summer"
+    },
+    "originalType": "original",
+    "status": "completed",
+    "synopsis": "山深い田舎町に暮らす女子高校生・三葉と、東京の男子高校生・瀧は、ある日突然、夢の中で互いの体が入れ替わっていることに気づく。入れ替わりを繰り返しながら距離を縮めていく二人だったが、その現象には千年ぶりに接近する彗星が関わっていた。すれ違う時間と記憶を越えて相手の名前を探す、記録的なヒットとなった劇場作品。",
+    "anilistId": 21519,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:21519)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "spirited-away",
+    "title": "千と千尋の神隠し",
+    "titleKana": "せんとちひろのかみかくし",
+    "directorIds": [
+      "miyazaki-hayao"
+    ],
+    "seriesComposerIds": [],
+    "studioIds": [
+      "studio-ghibli"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "hiiragi-rumi",
+        "character": "荻野千尋"
+      },
+      {
+        "voiceActorId": "irino-miyu",
+        "character": "ハク"
+      }
+    ],
+    "themeIds": [
+      "fantasy",
+      "family",
+      "journey"
+    ],
+    "format": "movie",
+    "season": {
+      "year": 2001,
+      "quarter": "summer"
+    },
+    "originalType": "original",
+    "status": "completed",
+    "synopsis": "引っ越しの途中で不思議な町に迷い込んだ10歳の千尋は、両親を豚に変えられ、八百万の神々が集う湯屋「油屋」で働くことになる。名前を奪われ「千」と呼ばれながらも、少年ハクや湯屋の仲間に支えられ、千尋は次第にたくましさを取り戻していく。日本のアニメーション映画を代表する、スタジオジブリの長編作品。",
+    "anilistId": 199,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:199)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "sousou-no-frieren",
+    "title": "葬送のフリーレン",
+    "titleKana": "そうそうのふりーれん",
+    "directorIds": [
+      "saito-keiichiro"
+    ],
+    "seriesComposerIds": [
+      "suzuki-tomohiro"
+    ],
+    "studioIds": [
+      "madhouse"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "tanezaki-atsumi",
+        "character": "フリーレン"
+      },
+      {
+        "voiceActorId": "ichinose-kana",
+        "character": "フェルン"
+      },
+      {
+        "voiceActorId": "kobayashi-chiaki",
+        "character": "シュタルク"
+      }
+    ],
+    "themeIds": [
+      "fantasy",
+      "journey",
+      "tearjerker"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2023,
+      "quarter": "fall"
+    },
+    "originalType": "manga",
+    "status": "ongoing",
+    "synopsis": "魔王を倒した勇者一行の魔法使いフリーレンは、寿命千年を超えるエルフ。仲間たちとの10年の冒険は、彼女にとってほんの一瞬の出来事だった。勇者ヒンメルの死を看取り、人を知らなかったことを悔いたフリーレンは、弟子のフェルンらとともに、かつての冒険の道のりをたどる旅に出る。時間と別れを静かに描くファンタジー。",
+    "anilistId": 154587,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:154587)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 28,
+    "broadcastNote": "第2期が制作されている(第2期以降は監督交代)。",
+    "relatedComicUrl": "https://izenmi.github.io/manga-db/works/sousou-no-frieren"
+  },
+  {
+    "id": "bocchi-the-rock",
+    "title": "ぼっち・ざ・ろっく!",
+    "titleKana": "ぼっちざろっく",
+    "directorIds": [
+      "saito-keiichiro"
+    ],
+    "seriesComposerIds": [
+      "yoshida-erika"
+    ],
+    "studioIds": [
+      "cloverworks"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "aoyama-yoshino",
+        "character": "後藤ひとり"
+      },
+      {
+        "voiceActorId": "suzushiro-sayumi",
+        "character": "伊地知虹夏"
+      },
+      {
+        "voiceActorId": "mizuno-saku",
+        "character": "山田リョウ"
+      },
+      {
+        "voiceActorId": "hasegawa-ikumi",
+        "character": "喜多郁代"
+      }
+    ],
+    "themeIds": [
+      "music",
+      "comedy",
+      "school",
+      "club-activities",
+      "youth"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2022,
+      "quarter": "fall"
+    },
+    "originalType": "manga",
+    "status": "completed",
+    "synopsis": "極度の人見知りでコミュニケーションが苦手な後藤ひとりは、ギターだけを心の支えに、ネットでは「ギターヒーロー」として密かな人気を集めていた。ある日、ドラマーの伊地知虹夏に誘われ、バンド「結束バンド」に加入することに。ライブハウスを舞台に、ぼっち少女がバンド活動を通して少しずつ世界を広げていく。",
+    "anilistId": 130003,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:130003)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 12
+  },
+  {
+    "id": "oshi-no-ko",
+    "title": "【推しの子】",
+    "titleKana": "おしのこ",
+    "directorIds": [
+      "hiramaki-daisuke"
+    ],
+    "seriesComposerIds": [
+      "tanaka-hitoshi"
+    ],
+    "studioIds": [
+      "doga-kobo"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "takahashi-rie",
+        "character": "星野アイ"
+      },
+      {
+        "voiceActorId": "otsuka-takeo",
+        "character": "アクア"
+      },
+      {
+        "voiceActorId": "ikoma-yurie",
+        "character": "ルビー"
+      },
+      {
+        "voiceActorId": "han-megumi",
+        "character": "有馬かな"
+      }
+    ],
+    "themeIds": [
+      "idol",
+      "suspense",
+      "work"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2023,
+      "quarter": "spring"
+    },
+    "originalType": "manga",
+    "status": "ongoing",
+    "synopsis": "地方都市で働く産婦人科医は、担当患者として現れた「推し」のアイドル・星野アイと思わぬ形で関わり、やがて彼女の子として生まれ変わることになる。芸能界の光と闇を内側から目にした主人公は、ある事件をきっかけに復讐を誓い、芸能界を舞台にした駆け引きへ足を踏み入れていく。アイドル業界を描く異色のサスペンス。",
+    "anilistId": 150672,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:150672)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 11,
+    "broadcastNote": "第2期以降も制作されている。",
+    "relatedComicUrl": "https://izenmi.github.io/manga-db/works/oshi-no-ko"
+  },
+  {
+    "id": "chainsaw-man",
+    "title": "チェンソーマン",
+    "titleKana": "ちぇんそーまん",
+    "directorIds": [
+      "nakayama-ryu"
+    ],
+    "seriesComposerIds": [
+      "seko-hiroshi"
+    ],
+    "studioIds": [
+      "mappa"
+    ],
+    "cast": [
+      {
+        "voiceActorId": "toya-kikunosuke",
+        "character": "デンジ"
+      },
+      {
+        "voiceActorId": "kusunoki-tomori",
+        "character": "マキマ"
+      },
+      {
+        "voiceActorId": "sakata-shogo",
+        "character": "早川アキ"
+      },
+      {
+        "voiceActorId": "fairouz-ai",
+        "character": "パワー"
+      }
+    ],
+    "themeIds": [
+      "dark-fantasy",
+      "action",
+      "battle"
+    ],
+    "format": "tv",
+    "season": {
+      "year": 2022,
+      "quarter": "fall"
+    },
+    "originalType": "manga",
+    "status": "ongoing",
+    "synopsis": "父の借金を返すため、チェンソーの悪魔ポチタとともに悪魔退治で日銭を稼ぐ少年デンジ。裏切りに遭い命を落としかけた彼は、ポチタと契約して「チェンソーマン」へと変身する力を得る。公安のデビルハンターとしてマキマの下で働くことになったデンジは、ささやかな夢のために悪魔との危険な戦いへ身を投じていく。",
+    "anilistId": 127230,
+    "externalLinks": {},
+    "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:127230)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
+    "updatedAt": "2026-08-08",
+    "episodes": 12,
+    "broadcastNote": "劇場版『レゼ篇』が制作されている。",
+    "relatedComicUrl": "https://izenmi.github.io/manga-db/works/chainsaw-man"
+  }
+]

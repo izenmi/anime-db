@@ -1,0 +1,758 @@
+[
+  {
+    "id": "kaji-yuki",
+    "name": "梶裕貴",
+    "nameKana": "かじゆうき",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "ishikawa-yui",
+    "name": "石川由依",
+    "nameKana": "いしかわゆい",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "inoue-marina",
+    "name": "井上麻里奈",
+    "nameKana": "いのうえまりな",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "hanae-natsuki",
+    "name": "花江夏樹",
+    "nameKana": "はなえなつき",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "kito-akari",
+    "name": "鬼頭明里",
+    "nameKana": "きとうあかり",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "matsuoka-yoshitsugu",
+    "name": "松岡禎丞",
+    "nameKana": "まつおかよしつぐ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "shimono-hiro",
+    "name": "下野紘",
+    "nameKana": "しものひろ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "uchida-yuma",
+    "name": "内田雄馬",
+    "nameKana": "うちだゆうま",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "enoki-junya",
+    "name": "榎木淳弥",
+    "nameKana": "えのきじゅんや",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "seto-asami",
+    "name": "瀬戸麻沙美",
+    "nameKana": "せとあさみ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "nakamura-yuichi",
+    "name": "中村悠一",
+    "nameKana": "なかむらゆういち",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "tomatsu-haruka",
+    "name": "戸松遥",
+    "nameKana": "とまつはるか",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "taketatsu-ayana",
+    "name": "竹達彩奈",
+    "nameKana": "たけたつあやな",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "kobayashi-yusuke",
+    "name": "小林裕介",
+    "nameKana": "こばやしゆうすけ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "takahashi-rie",
+    "name": "高橋李依",
+    "nameKana": "たかはしりえ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "minase-inori",
+    "name": "水瀬いのり",
+    "nameKana": "みなせいのり",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "murakawa-rie",
+    "name": "村川梨衣",
+    "nameKana": "むらかわりえ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "miyano-mamoru",
+    "name": "宮野真守",
+    "nameKana": "みやのまもる",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "imai-asami",
+    "name": "今井麻美",
+    "nameKana": "いまいあさみ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "hanazawa-kana",
+    "name": "花澤香菜",
+    "nameKana": "はなざわかな",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "seki-tomokazu",
+    "name": "関智一",
+    "nameKana": "せきともかず",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "tamura-yukari",
+    "name": "田村ゆかり",
+    "nameKana": "たむらゆかり",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "eguchi-takuya",
+    "name": "江口拓也",
+    "nameKana": "えぐちたくや",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "hayami-saori",
+    "name": "早見沙織",
+    "nameKana": "はやみさおり",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "tanezaki-atsumi",
+    "name": "種﨑敦美",
+    "nameKana": "たねざきあつみ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "murase-ayumu",
+    "name": "村瀬歩",
+    "nameKana": "むらせあゆむ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "ishikawa-kaito",
+    "name": "石川界人",
+    "nameKana": "いしかわかいと",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "nazuka-kaori",
+    "name": "名塚佳織",
+    "nameKana": "なづかかおり",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "okamoto-nobuhiko",
+    "name": "岡本信彦",
+    "nameKana": "おかもとのぶひこ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "taneda-risa",
+    "name": "種田梨沙",
+    "nameKana": "たねだりさ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "osaka-ryota",
+    "name": "逢坂良太",
+    "nameKana": "おうさかりょうた",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "sakura-ayane",
+    "name": "佐倉綾音",
+    "nameKana": "さくらあやね",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "mitsushima-shinnosuke",
+    "name": "満島真之介",
+    "nameKana": "みつしましんのすけ",
+    "description": "俳優。声優としてもアニメ作品に出演。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "yuki-aoi",
+    "name": "悠木碧",
+    "nameKana": "ゆうきあおい",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "kugimiya-rie",
+    "name": "釘宮理恵",
+    "nameKana": "くぎみやりえ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "horie-yui",
+    "name": "堀江由衣",
+    "nameKana": "ほりえゆい",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "nojima-hirofumi",
+    "name": "野島裕史",
+    "nameKana": "のじまひろふみ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "kitamura-eri",
+    "name": "喜多村英梨",
+    "nameKana": "きたむらえり",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "majima-junji",
+    "name": "間島淳司",
+    "nameKana": "まじまじゅんじ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "kamiya-hiroshi",
+    "name": "神谷浩史",
+    "nameKana": "かみやひろし",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "saito-chiwa",
+    "name": "斎藤千和",
+    "nameKana": "さいとうちわ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "kato-emiri",
+    "name": "加藤英美里",
+    "nameKana": "かとうえみり",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "sawashiro-miyuki",
+    "name": "沢城みゆき",
+    "nameKana": "さわしろみゆき",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "fukuyama-jun",
+    "name": "福山潤",
+    "nameKana": "ふくやまじゅん",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "yukana",
+    "name": "ゆかな",
+    "nameKana": "ゆかな",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "sakurai-takahiro",
+    "name": "櫻井孝宏",
+    "nameKana": "さくらいたかひろ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "koshimizu-ami",
+    "name": "小清水亜美",
+    "nameKana": "こしみずあみ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "nonaka-ai",
+    "name": "野中藍",
+    "nameKana": "のなかあい",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "mizuhashi-kaori",
+    "name": "水橋かおり",
+    "nameKana": "みずはしかおり",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "sugita-tomokazu",
+    "name": "杉田智和",
+    "nameKana": "すぎたともかず",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "hirano-aya",
+    "name": "平野綾",
+    "nameKana": "ひらのあや",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "chihara-minori",
+    "name": "茅原実里",
+    "nameKana": "ちはらみのり",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "goto-yuko",
+    "name": "後藤邑子",
+    "nameKana": "ごとうゆうこ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "ono-daisuke",
+    "name": "小野大輔",
+    "nameKana": "おのだいすけ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "toyosaki-aki",
+    "name": "豊崎愛生",
+    "nameKana": "とよさきあき",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "hikasa-yoko",
+    "name": "日笠陽子",
+    "nameKana": "ひかさようこ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "sato-satomi",
+    "name": "佐藤聡美",
+    "nameKana": "さとうさとみ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "kotobuki-minako",
+    "name": "寿美菜子",
+    "nameKana": "ことぶきみなこ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "sakaguchi-daisuke",
+    "name": "阪口大助",
+    "nameKana": "さかぐちだいすけ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "kayano-ai",
+    "name": "茅野愛衣",
+    "nameKana": "かやのあい",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "ogata-megumi",
+    "name": "緒方恵美",
+    "nameKana": "おがためぐみ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "mitsuishi-kotono",
+    "name": "三石琴乃",
+    "nameKana": "みついしことの",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "hayashibara-megumi",
+    "name": "林原めぐみ",
+    "nameKana": "はやしばらめぐみ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "miyamura-yuko",
+    "name": "宮村優子",
+    "nameKana": "みやむらゆうこ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "yamadera-koichi",
+    "name": "山寺宏一",
+    "nameKana": "やまでらこういち",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "ishizuka-unsho",
+    "name": "石塚運昇",
+    "nameKana": "いしづかうんしょう",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "tada-aoi",
+    "name": "多田葵",
+    "nameKana": "ただあおい",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "kamishiraishi-mone",
+    "name": "上白石萌音",
+    "nameKana": "かみしらいしもね",
+    "description": "俳優。声優としてもアニメ作品に出演。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "kamiki-ryunosuke",
+    "name": "神木隆之介",
+    "nameKana": "かみきりゅうのすけ",
+    "description": "俳優。声優としてもアニメ作品に出演。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "hiiragi-rumi",
+    "name": "柊瑠美",
+    "nameKana": "ひいらぎるみ",
+    "description": "俳優。声優としてもアニメ作品に出演。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "irino-miyu",
+    "name": "入野自由",
+    "nameKana": "いりのみゆ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "ichinose-kana",
+    "name": "市ノ瀬加那",
+    "nameKana": "いちのせかな",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "kobayashi-chiaki",
+    "name": "小林千晃",
+    "nameKana": "こばやしちあき",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "aoyama-yoshino",
+    "name": "青山吉能",
+    "nameKana": "あおやまよしの",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "suzushiro-sayumi",
+    "name": "鈴代紗弓",
+    "nameKana": "すずしろさゆみ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "mizuno-saku",
+    "name": "水野朔",
+    "nameKana": "みずのさく",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "hasegawa-ikumi",
+    "name": "長谷川育美",
+    "nameKana": "はせがわいくみ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "otsuka-takeo",
+    "name": "大塚剛央",
+    "nameKana": "おおつかたけお",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "ikoma-yurie",
+    "name": "伊駒ゆりえ",
+    "nameKana": "いこまゆりえ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "han-megumi",
+    "name": "潘めぐみ",
+    "nameKana": "はんめぐみ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "toya-kikunosuke",
+    "name": "戸谷菊之介",
+    "nameKana": "とやきくのすけ",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "fairouz-ai",
+    "name": "ファイルーズあい",
+    "nameKana": "ふぁいるーずあい",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "kusunoki-tomori",
+    "name": "楠木ともり",
+    "nameKana": "くすのきともり",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "id": "sakata-shogo",
+    "name": "坂田将吾",
+    "nameKana": "さかたしょうご",
+    "description": "声優。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-08取得)から登録。",
+    "updatedAt": "2026-08-08"
+  }
+]
