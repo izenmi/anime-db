@@ -653,9 +653,9 @@
     "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:5081)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
     "updatedAt": "2026-08-08",
     "episodes": 15,
-    "seriesName": "〈物語〉シリーズ",
     "broadcastNote": "〈物語〉シリーズとして多数の続編が制作されている。",
-    "relatedNovelUrl": "https://izenmi.github.io/ranobe-db/works/bakemonogatari"
+    "relatedNovelUrl": "https://izenmi.github.io/ranobe-db/works/bakemonogatari",
+    "seriesId": "monogatari"
   },
   {
     "id": "code-geass",
@@ -927,8 +927,8 @@
     "sourceNote": "スタッフ・キャスト・放送時期はAniList(id:12189)で確認(2026-08-08)。監督・構成のクレジットが取得しきれなかった作品はAniListのスタッフ全ページ走査またはWikipedia日本語版で補完した。続編情報(broadcastNote)は概況であり詳細な放送年は未検証。あらすじは独自要約(コピペなし、核心の展開には触れていない)。",
     "updatedAt": "2026-08-08",
     "episodes": 22,
-    "seriesName": "〈古典部〉シリーズ",
-    "relatedMysteryUrl": "https://izenmi.github.io/mystery-db/works/hyoka"
+    "relatedMysteryUrl": "https://izenmi.github.io/mystery-db/works/hyoka",
+    "seriesId": "kotenbu"
   },
   {
     "id": "evangelion",

@@ -30,6 +30,7 @@ const works = readData("works");
 const staff = readData("staff");
 const studios = readData("studios");
 const voiceActors = readData("voiceActors");
+const seriesList = readData("series");
 const themes = readData("themes");
 const awards = readData("awards");
 
@@ -37,6 +38,8 @@ const routes = [
   "/",
   "/works",
   ...works.map((w) => `/works/${w.id}`),
+  "/series",
+  ...seriesList.map((x) => `/series/${x.id}`),
   "/themes",
   ...themes.map((t) => `/themes/${t.id}`),
   "/staff",

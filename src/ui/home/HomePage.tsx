@@ -10,6 +10,7 @@ import { SITE_NAME, SITE_URL, useSeo } from "../common/useSeo";
 
 const BADGES: { key: keyof Awaited<ReturnType<typeof getCounts>>; label: string; to: string; color: string }[] = [
   { key: "works", label: "作品", to: "/works", color: "sakura" },
+  { key: "series", label: "シリーズ", to: "/series", color: "yellow" },
   { key: "studios", label: "スタジオ", to: "/studios", color: "mint" },
   { key: "staff", label: "スタッフ", to: "/staff", color: "blue" },
   { key: "voiceActors", label: "声優", to: "/cast", color: "pink" },

@@ -8,7 +8,8 @@ TVアニメ・劇場アニメを制作スタジオ・監督・シリーズ構成
 
 ## データモデル上の判断(このサイト固有・最重要)
 
-- **シリーズ単位で1エントリ**。『鬼滅の刃』は1件で、分割クール・続編・派生劇場版は`broadcastNote`(自由記述)に書く。劇場作品は**単独作品のみ**`format: "movie"`で登録する(TVシリーズの劇場版は登録しない)
+- **シリーズ単位で1エントリ**。『鬼滅の刃』は1件で、分割クール・続編・派生劇場版は`broadcastNote`(自由記述)に書く
+- **〈物語〉シリーズのような「作品をまたぐシリーズ」は`series.json`のエンティティ**(作品から`seriesId`で任意参照。2026-08-09にエンティティ化、それ以前の`seriesName`表示用テキストを置換)。`/series`に一覧・詳細ページ(作品は放送順固定)、ナビタブと作品一覧の絞り込みもある。劇場作品は**単独作品のみ**`format: "movie"`で登録する(TVシリーズの劇場版は登録しない)
 - **`season` はシリーズ第1期の放送開始クール** `{ year, quarter: winter|spring|summer|fall }`。埋め込みフィールドで、エンティティ化していない(game-dbの`platforms`と同じ考え方)
 - **`episodes`は第1期の話数**を基本とし、通算話数は書かない(未検証の数値を作らないため)
 - **スタッフは単一ファイル2ロール方式**: `staff.json`を`directorIds`(必須≥1)と`seriesComposerIds`(任意)の両方から参照する(game-dbのcompanies.jsonと同じ設計。監督と構成の兼任が多い)。スタッフ詳細ページは「監督作品」「シリーズ構成作品」の2セクション
@@ -35,7 +36,7 @@ TVアニメ・劇場アニメを制作スタジオ・監督・シリーズ構成
   - 監督ロールは`Director`/`Chief Director`のみ採用(`Episode Director`・`Assistant Director`・`Sound Director`等を混ぜない)。構成は`Series Composition`
   - **AniListの人名表記が日本のクレジットと違うことがある**。実例: 朴性厚がハングル表記(박성후)、イシグロキョウヘイが漢字表記(石黒恭平)。日本のクレジット表記で登録し、sourceNoteに書き残す
 - **`scripts/fetch-covers.mjs`** … works.jsonの`anilistId`をキーに`Media(id:)`で直接引くため、タイトル検索ベースの姉妹サイトと違い**あいまいマッチの誤ヒットが構造的に起きない**。画像はAniList CDN(`s4.anilist.co`)へのホットリンク。検証は`content-type`+実バイト数(content-lengthヘッダはHTTP/2で返らないことがある)。`--only`/`--force`(非破壊、失敗時は既存維持`[keep]`)/`--retry-misses`
-- **`scripts/apply_batch.py`** … キーは`newStaff`/`newStudios`/`newVoiceActors`/`newThemes`/`newAwards`/`works`。**applyは1回だけ**、実行前に既存id衝突件数をレポートで確認する
+- **`scripts/apply_batch.py`** … キーは`newStaff`/`newStudios`/`newVoiceActors`/`newSeries`/`newThemes`/`newAwards`/`works`。**applyは1回だけ**、実行前に既存id衝突件数をレポートで確認する
 - **`scripts/find_people.py --names 新海誠 MAPPA 花澤香菜`** … staff/studios/voiceActorsの既存idをJSON全体を読まずに引く。バッチ前に必ず通す
 - あらすじは150〜250字で**必ず独自要約**(AniListのdescriptionも転記禁止)。書き出し後に`[Ѐ-ӿ가-힯]`と`[A-Za-z]{4,}`で機械点検する(シード投入時にこの点検が「剣technique」「VRMMORPG」の混入を実際に検出した)
 

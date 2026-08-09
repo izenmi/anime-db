@@ -7,6 +7,7 @@ batch.json の形式:
   "newStaff": [...],
   "newStudios": [...],
   "newVoiceActors": [...],
+  "newSeries": [...],
   "newThemes": [...],
   "newAwards": [...],
   "works": [...]
@@ -51,6 +52,7 @@ def main():
     staff = load("staff")
     studios = load("studios")
     voice_actors = load("voiceActors")
+    series = load("series")
     themes = load("themes")
     awards = load("awards")
     works = load("works")
@@ -58,6 +60,7 @@ def main():
     staff_ids = {s["id"] for s in staff}
     studio_ids = {s["id"] for s in studios}
     va_ids = {v["id"] for v in voice_actors}
+    series_ids = {x["id"] for x in series}
     theme_ids = {t["id"] for t in themes}
     award_ids = {a["id"] for a in awards}
     work_ids = {w["id"] for w in works}
@@ -79,6 +82,7 @@ def main():
     add_new(staff, staff_ids, "newStaff", "staff")
     add_new(studios, studio_ids, "newStudios", "studios")
     add_new(voice_actors, va_ids, "newVoiceActors", "voiceActors")
+    add_new(series, series_ids, "newSeries", "series")
     add_new(themes, theme_ids, "newThemes", "themes")
     add_new(awards, award_ids, "newAwards", "awards")
 
@@ -107,6 +111,8 @@ def main():
                 missing.append(f"voiceActorId:{c.get('voiceActorId')}")
             if not c.get("character"):
                 missing.append(f"cast entry {c.get('voiceActorId')} missing character")
+        if w.get("seriesId") is not None and w.get("seriesId") not in series_ids:
+            missing.append(f"seriesId:{w.get('seriesId')}")
         for tid in w.get("themeIds", []):
             if tid not in theme_ids:
                 missing.append(f"themeId:{tid}")
@@ -137,6 +143,7 @@ def main():
     save("staff", staff)
     save("studios", studios)
     save("voiceActors", voice_actors)
+    save("series", series)
     save("themes", themes)
     save("awards", awards)
     save("works", works)

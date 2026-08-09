@@ -164,7 +164,11 @@ export function WorkDetailPage() {
                   </span>
                 ))}
               </p>
-              {state.data.seriesName && <p className="page-subtitle">{state.data.seriesName}</p>}
+              {state.data.seriesId && state.data.seriesName && (
+                <p className="page-subtitle">
+                  <Link to={`/series/${state.data.seriesId}`}>{state.data.seriesName}</Link>
+                </p>
+              )}
               {state.data.castGenerated.length > 0 && (
                 <p className="page-subtitle">
                   出演:{" "}

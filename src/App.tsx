@@ -4,6 +4,8 @@ import { ScrollToTop } from "./ui/common/ScrollToTop";
 import { HomePage } from "./ui/home/HomePage";
 import { WorkListPage } from "./ui/works/WorkListPage";
 import { WorkDetailPage } from "./ui/works/WorkDetailPage";
+import { SeriesListPage } from "./ui/series/SeriesListPage";
+import { SeriesDetailPage } from "./ui/series/SeriesDetailPage";
 import { ThemeListPage } from "./ui/themes/ThemeListPage";
 import { ThemeDetailPage } from "./ui/themes/ThemeDetailPage";
 import { StaffListPage } from "./ui/staff/StaffListPage";
@@ -27,6 +29,8 @@ export function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/works" element={<WorkListPage />} />
         <Route path="/works/:id" element={<WorkDetailPage />} />
+        <Route path="/series" element={<SeriesListPage />} />
+        <Route path="/series/:id" element={<SeriesDetailPage />} />
         <Route path="/themes" element={<ThemeListPage />} />
         <Route path="/themes/:id" element={<ThemeDetailPage />} />
         <Route path="/staff" element={<StaffListPage />} />

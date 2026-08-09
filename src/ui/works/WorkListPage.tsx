@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
-import { getStudios, getThemes, getWorks } from "../../data/manifest";
+import { getSeries, getStudios, getThemes, getWorks } from "../../data/manifest";
 import { useAsyncData } from "../common/useAsyncData";
 import { Loading, ErrorState, EmptyState } from "../common/Status";
 import { WorkCard } from "../common/WorkCard";
@@ -99,6 +99,7 @@ export function WorkListPage() {
   const q = params.get("q") ?? "";
   const themeId = params.get("theme") ?? "";
   const studioId = params.get("studio") ?? "";
+  const seriesId = params.get("series") ?? "";
   const originalType = params.get("originalType") ?? "";
   const quarter = params.get("quarter") ?? "";
   const format = params.get("format") ?? "";
@@ -109,6 +110,7 @@ export function WorkListPage() {
   const worksState = useAsyncData(getWorks, []);
   const themesState = useAsyncData(getThemes, []);
   const studiosState = useAsyncData(getStudios, []);
+  const seriesState = useAsyncData(getSeries, []);
 
   useSeo({
     title: "作品一覧",
@@ -130,13 +132,14 @@ export function WorkListPage() {
       }
       if (themeId && !w.themeIds.includes(themeId)) return false;
       if (studioId && !w.studioIds.includes(studioId)) return false;
+      if (seriesId && w.seriesId !== seriesId) return false;
       if (originalType && w.originalType !== originalType) return false;
       if (quarter && w.season.quarter !== quarter) return false;
       if (format && w.format !== format) return false;
       if (award === "yes" && w.awardSummaries.length === 0) return false;
       return true;
     });
-  }, [worksState, q, themeId, studioId, originalType, quarter, format, award]);
+  }, [worksState, q, themeId, studioId, seriesId, originalType, quarter, format, award]);
 
   const sorted = useMemo(() => {
     if (sort === "year-asc") return [...filtered].sort((a, b) => seasonSortKey(a) - seasonSortKey(b));
@@ -167,13 +170,13 @@ export function WorkListPage() {
 
   function clearFilters() {
     const next = new URLSearchParams(params);
-    for (const key of ["q", "theme", "studio", "originalType", "quarter", "format", "award", "page"]) {
+    for (const key of ["q", "theme", "studio", "series", "originalType", "quarter", "format", "award", "page"]) {
       next.delete(key);
     }
     setParams(next, { replace: true });
   }
 
-  const hasActiveFilters = Boolean(q || themeId || studioId || originalType || quarter || format || award);
+  const hasActiveFilters = Boolean(q || themeId || studioId || seriesId || originalType || quarter || format || award);
 
   return (
     <div className="page">
@@ -202,6 +205,16 @@ export function WorkListPage() {
             {studiosState.data.map((s) => (
               <option value={s.id} key={s.id}>
                 {s.name}
+              </option>
+            ))}
+          </select>
+        )}
+        {seriesState.status === "ready" && seriesState.data.length > 0 && (
+          <select value={seriesId} onChange={(e) => updateParam("series", e.target.value)}>
+            <option value="">シリーズで絞り込み</option>
+            {seriesState.data.map((x) => (
+              <option value={x.id} key={x.id}>
+                {x.name}
               </option>
             ))}
           </select>
