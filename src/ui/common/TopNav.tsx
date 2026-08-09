@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 
 const LINKS = [
   { to: "/works", label: "作品一覧" },
-  { to: "/timeline", label: "年表" },
   { to: "/themes", label: "テーマ" },
   { to: "/studios", label: "スタジオ" },
   { to: "/staff", label: "スタッフ" },

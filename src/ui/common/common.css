@@ -809,7 +809,7 @@ h1 {
 
 /* 年は「その年の受賞作の区切り」であって飾りではないので、ピルを大きめに取って
    件数と罫線を添える。背景色は .winner-year--* をそのまま流用し、年ごとの
-   色ローテーションを受賞歴・年表ページと一致させている。 */
+   色ローテーションを受賞歴ページと一致させている。 */
 .award-year__year {
   color: var(--color-ink-on-accent);
   border-radius: var(--radius-pill);

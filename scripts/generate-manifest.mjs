@@ -380,7 +380,6 @@ const sitemapEntries = [
   urlEntry("/"),
   urlEntry("/works"),
   ...works.map((w) => urlEntry(`/works/${w.id}`, w.updatedAt?.slice(0, 10))),
-  urlEntry("/timeline"),
   urlEntry("/themes"),
   ...themes.map((t) => urlEntry(`/themes/${t.id}`)),
   urlEntry("/staff"),

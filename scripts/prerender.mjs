@@ -37,7 +37,6 @@ const routes = [
   "/",
   "/works",
   ...works.map((w) => `/works/${w.id}`),
-  "/timeline",
   "/themes",
   ...themes.map((t) => `/themes/${t.id}`),
   "/staff",
