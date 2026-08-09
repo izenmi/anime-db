@@ -198,7 +198,7 @@ export function HomePage() {
           <>
             <ul className="winner-list">
               {recentAwards.map((a) => (
-                <li key={`${a.workId}-${a.awardId}-${a.year}`}>
+                <li key={`${a.workId}-${a.awardId}-${a.year}-${a.result}`}>
                   <span className={`winner-year winner-year--${colorForYear(a.year)}`}>{a.year}</span>
                   <Link className="home-award-name" to={`/awards/${a.awardId}`}>
                     {a.awardName}

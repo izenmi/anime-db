@@ -27,6 +27,12 @@ from harvest_anilist import (MOVIE_SPINOFF_RE, SEQUEL_TITLE_RE, norm, romaji_roo
                              same_franchise, title_keys)
 from jp_romaji import person_slug, romaji_to_hiragana, slug
 
+# `--force 1254,235` でフランチャイズ判定を素通しさせるaid。派生作品が先に登録されて
+# 本編が弾かれるケース(『聖闘士星矢』など)の逃げ道。
+FORCED_AIDS = {int(x) for x in (
+    sys.argv[sys.argv.index("--force") + 1] if "--force" in sys.argv else ""
+).split(",") if x.strip()}
+
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "public" / "data" / "source"
 CACHE = ROOT / "scripts" / ".cache"
@@ -118,7 +124,10 @@ def stage(count):
             newly_skipped.append(aid)
             continue
         cand_key = (title_keys(rec["t"]), romaji_root(rec["r"]))
-        if any(same_franchise(cand_key, k) for k in locked):
+        # --force に挙げたaidはフランチャイズ判定を通す。『聖闘士星矢』(TV)のように
+        # 派生の劇場版が先に登録されたせいで本編が弾かれる場合に使う。
+        forced = FORCED_AIDS
+        if rec["aid"] not in forced and any(same_franchise(cand_key, k) for k in locked):
             newly_skipped.append(aid)
             continue
         # 『青春ブタ野郎はゆめみる少女の夢を見ない』のようにマーカーの無いTVシリーズの劇場版は、

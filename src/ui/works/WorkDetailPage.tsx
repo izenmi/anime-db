@@ -217,7 +217,7 @@ export function WorkDetailPage() {
               {state.data.awardSummaries.length > 0 && (
                 <div className="chip-row">
                   {state.data.awardSummaries.map((a) => (
-                    <Link className="chip award-chip" to={`/awards/${a.awardId}`} key={`${a.awardId}-${a.year}`}>
+                    <Link className="chip award-chip" to={`/awards/${a.awardId}`} key={`${a.awardId}-${a.year}-${a.result}`}>
                       {a.awardName} {a.result}({a.year})
                     </Link>
                   ))}

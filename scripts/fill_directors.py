@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """候補プールのうち監督(と構成)が取れていないものを、AniListのstaff次ページから補完する。
 
-AniListの `staff` は1ページ最大50件・RELEVANCE順で、人気作は監督がページ外に落ちる
+AniListの `staff` は1ページ最大50件で、**sort を指定しないと関連度順にならず**
+監督が後ろのページへ落ちる(既定順のまま引いていたせいで『負けヒロインが多すぎる!』などを
+取りこぼしていた)。人気作は RELEVANCE 順にしてもページ外に出ることがある
 (CLAUDE.md記載の既知の落とし穴。実測でも上位26件中13件が空だった)。1件ずつ引くと
 1000作品で30分以上かかるので、**`media(id_in: [...])` で25作品ぶんをまとめて**引き、
 ページ2,3,4… と必要な作品だけを追いかける。
@@ -22,7 +24,7 @@ query ($ids: [Int], $page: Int) {
   Page(page: 1, perPage: 50) {
     media(id_in: $ids, type: ANIME) {
       id
-      staff(page: $page, perPage: 50) {
+      staff(page: $page, perPage: 50, sort: RELEVANCE) {
         pageInfo { hasNextPage }
         edges { role node { name { native first last full } } }
       }
