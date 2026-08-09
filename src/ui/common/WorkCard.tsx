@@ -26,8 +26,12 @@ export function WorkCard({ work }: { work: WorkGenerated }) {
       <div className="work-card__content">
         <div className="work-card__title">{work.title}</div>
         <div className="work-card__meta">
-          <span className={`season-badge season-badge--${work.season.quarter}`}>{seasonLabel(work.season)}</span>
-          {work.format === "movie" && <span className="season-badge season-badge--movie">劇場</span>}
+          <span className={`season-badge season-badge--quiet season-badge--${work.season.quarter}`}>
+            {seasonLabel(work.season)}
+          </span>
+          {work.format === "movie" && (
+            <span className="season-badge season-badge--quiet season-badge--movie">劇場</span>
+          )}
           {" "}
           監督: {work.directorNames.join("・")} / {work.studioNames.join("・")}
           {work.episodes != null && ` / 全${work.episodes}話`}

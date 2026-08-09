@@ -7,3 +7,7 @@ tsconfig.tsbuildinfo
 # source files themselves ARE committed, this generated output isn't.
 public/data/generated/
 public/sitemap.xml
+
+# 一括追加パイプラインの作業ファイル(候補プール・バッチ・ログ)。再生成できるので追跡しない
+scripts/.cache/
+scripts/__pycache__/

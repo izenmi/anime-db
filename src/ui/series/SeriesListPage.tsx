@@ -11,7 +11,7 @@ export function SeriesListPage() {
     title: "シリーズ一覧",
     description:
       state.status === "ready"
-        ? `アニメシリーズ${state.data.length}件の一覧。シリーズごとに作品を放送順で辿れます。`
+        ? `アニメシリーズ${state.data.length}件の一覧。収録作品数の多い順。シリーズごとに作品を新しい順で辿れます。`
         : undefined,
   });
 
