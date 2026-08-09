@@ -4,7 +4,7 @@ import { getSeries, getStudios, getThemes, getWorks } from "../../data/manifest"
 import { useAsyncData } from "../common/useAsyncData";
 import { Loading, ErrorState, EmptyState } from "../common/Status";
 import { useSeo } from "../common/useSeo";
-import { ORIGINAL_TYPE_LABEL, QUARTER_LABEL, seasonSortKey } from "../common/labels";
+import { ORIGINAL_TYPE_LABEL, QUARTER_LABEL, displaySeason, seasonSortKey } from "../common/labels";
 import { WorkGrid } from "../common/WorkGrid";
 import { useCoverView } from "../common/useCoverView";
 
@@ -138,7 +138,9 @@ export function WorkListPage() {
       if (studioId && !w.studioIds.includes(studioId)) return false;
       if (seriesId && w.seriesId !== seriesId) return false;
       if (originalType && w.originalType !== originalType) return false;
-      if (quarter && w.season.quarter !== quarter) return false;
+      // カードに出るクール(= 最新シーズン)で絞る。第1期の season で絞ると、
+      // 「春アニメ」で絞ったのに「2022年冬」と書かれたカードが並ぶことになる。
+      if (quarter && displaySeason(w).quarter !== quarter) return false;
       if (format && w.format !== format) return false;
       if (award === "yes" && w.awardSummaries.length === 0) return false;
       return true;

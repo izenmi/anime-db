@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import type { WorkGenerated } from "../../types";
 import { WorkCover } from "./WorkCover";
-import { ORIGINAL_TYPE_LABEL, seasonLabel } from "./labels";
+import { ORIGINAL_TYPE_LABEL, displaySeason, seasonLabel } from "./labels";
 
 /** カード上のバッジは狭いので、一覧では短い表記を出す(詳細ページは FORMAT_LABEL のまま)。 */
 const FORMAT_BADGE: Record<string, string> = { movie: "劇場", ova: "OVA", ona: "ONA" };
@@ -21,6 +21,9 @@ export function WorkCard({ work }: { work: WorkGenerated }) {
   const visibleThemes = work.themeIds
     .map((id, i) => ({ id, name: work.themeNames[i] }))
     .filter((t) => !work.spoilerThemeIds.includes(t.id));
+  // 一覧のクールは最新シーズン基準(displaySeason)。「全4期」と並べて初めて、その年が
+  // 第1期ではなく最新シーズンのものだと読めるので、期数バッジは日付のすぐ隣に置く。
+  const season = displaySeason(work);
 
   return (
     <div className="work-card">
@@ -29,9 +32,15 @@ export function WorkCard({ work }: { work: WorkGenerated }) {
       <div className="work-card__content">
         <div className="work-card__title">{work.title}</div>
         <div className="work-card__meta">
-          <span className={`season-badge season-badge--quiet season-badge--${work.season.quarter}`}>
-            {seasonLabel(work.season)}
+          <span className={`season-badge season-badge--quiet season-badge--${season.quarter}`}>
+            {seasonLabel(season)}
           </span>
+          {work.seasonCount != null && (
+            <>
+              {" "}
+              <span className="season-badge season-badge--quiet">全{work.seasonCount}期</span>
+            </>
+          )}
           {work.format !== "tv" && (
             <span className="season-badge season-badge--quiet season-badge--movie">
               {FORMAT_BADGE[work.format]}

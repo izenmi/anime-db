@@ -17,7 +17,7 @@ export type WorkStatus = "completed" | "ongoing" | "unknown";
 export type SeasonQuarter = "winter" | "spring" | "summer" | "fall";
 
 /** TVシリーズか、単独の劇場作品か。劇場版はTVシリーズの一部として扱い、単独作品のみ movie。 */
-export type WorkFormat = "tv" | "movie";
+export type WorkFormat = "tv" | "movie" | "ova" | "ona";
 
 /** 原作メディアの種別。姉妹サイトへの相互リンクとフィルターの軸。 */
 export type OriginalType = "manga" | "lightnovel" | "novel" | "game" | "original" | "other";
@@ -46,6 +46,13 @@ export interface WorkSource {
   format: WorkFormat;
   /** 放送開始クール(第1期)。劇場作品は公開年+公開時期のクール。 */
   season: { year: number; quarter: SeasonQuarter };
+  /** シリーズ通算の期数。`scripts/backfill_seasons.py` が SEQUEL 連鎖から機械的に付ける派生値で、
+   *  broadcastNote の「第N期」と同じ数え方(分割クールは1期と数える)。1期だけの作品では省略。 */
+  seasonCount?: number;
+  /** 最新シーズンの放送クール。作品一覧では `season`(第1期)ではなくこちらを見せる —
+   *  長寿シリーズほど第1期の年は古く、いつまで続いているかが読めないため。
+   *  同じく backfill_seasons.py が付ける派生値で、`season` と同じなら省略(読み手側で補う)。 */
+  latestSeason?: { year: number; quarter: SeasonQuarter };
   /** 話数。続編・分割クールを含むシリーズ通算の概数でよい(注記はbroadcastNoteへ)。 */
   episodes?: number;
   /** 第2期・劇場版などシリーズ展開の自由記述。 */

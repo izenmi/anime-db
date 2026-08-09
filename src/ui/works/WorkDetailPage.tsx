@@ -6,7 +6,7 @@ import { Loading, ErrorState, EmptyState } from "../common/Status";
 import { WorkCard } from "../common/WorkCard";
 import { WorkCover, amazonSearchUrl, danimeSearchUrl, netflixSearchUrl, primeVideoSearchUrl } from "../common/WorkCover";
 import { BASE_PATH, DEFAULT_OG_IMAGE, SITE_NAME, breadcrumbJsonLd, useSeo } from "../common/useSeo";
-import { FORMAT_LABEL, ORIGINAL_TYPE_LABEL, STATUS_LABEL, seasonLabel } from "../common/labels";
+import { FORMAT_LABEL, ORIGINAL_TYPE_LABEL, STATUS_LABEL, displaySeason, seasonLabel } from "../common/labels";
 import type { WorkGenerated } from "../../types";
 
 function workJsonLd(id: string, w: WorkGenerated) {
@@ -129,6 +129,10 @@ export function WorkDetailPage() {
                   {seasonLabel(state.data.season)}
                 </span>{" "}
                 {FORMAT_LABEL[state.data.format]}
+                {/* 詳細のバッジは放送開始クール(第1期)のまま。一覧が最新シーズンを出すので、
+                    両者を突き合わせられるよう最新シーズンをここに併記する。 */}
+                {state.data.seasonCount != null &&
+                  ` / 全${state.data.seasonCount}期(最新 ${seasonLabel(displaySeason(state.data))})`}
                 {state.data.episodes != null && ` / 全${state.data.episodes}話`}
                 {" / "}
                 {STATUS_LABEL[state.data.status]}

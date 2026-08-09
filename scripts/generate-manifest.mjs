@@ -37,6 +37,11 @@ const awardsById = new Map(awards.map((a) => [a.id, a]));
 const QUARTERS = ["winter", "spring", "summer", "fall"];
 const ORIGINAL_TYPES = ["manga", "lightnovel", "novel", "game", "original", "other"];
 
+/** 年内のクール順まで含めた比較キー(src/ui/common/labels.ts の seasonSortKey と同じ並び)。 */
+function seasonKey(s) {
+  return s.year * 4 + QUARTERS.indexOf(s.quarter);
+}
+
 const errors = [];
 
 function checkRef(map, id, kind, workId) {
@@ -61,11 +66,23 @@ for (const w of works) {
   w.themeIds.forEach((id) => checkRef(themesById, id, "theme", w.id));
   (w.awardResults ?? []).forEach((r) => checkRef(awardsById, r.awardId, "award", w.id));
 
-  if (w.format !== "tv" && w.format !== "movie") {
-    errors.push(`work "${w.id}": format must be "tv" or "movie" (got "${w.format}")`);
+  if (!["tv", "movie", "ova", "ona"].includes(w.format)) {
+    errors.push(`work "${w.id}": format must be one of tv/movie/ova/ona (got "${w.format}")`);
   }
   if (!w.season || !Number.isInteger(w.season.year) || !QUARTERS.includes(w.season.quarter)) {
     errors.push(`work "${w.id}": season must be { year, quarter: winter|spring|summer|fall }`);
+  }
+  // seasonCount / latestSeason は scripts/backfill_seasons.py が入れる派生データ。手で書くと
+  // broadcastNote の「第N期」とずれるので、値の形と前後関係だけはここで見ておく。
+  if (w.seasonCount != null && (!Number.isInteger(w.seasonCount) || w.seasonCount < 2)) {
+    errors.push(`work "${w.id}": seasonCount must be an integer >= 2 (got ${w.seasonCount})`);
+  }
+  if (w.latestSeason != null) {
+    if (!Number.isInteger(w.latestSeason.year) || !QUARTERS.includes(w.latestSeason.quarter)) {
+      errors.push(`work "${w.id}": latestSeason must be { year, quarter: winter|spring|summer|fall }`);
+    } else if (seasonKey(w.latestSeason) < seasonKey(w.season)) {
+      errors.push(`work "${w.id}": latestSeason must not be earlier than season`);
+    }
   }
   if (!ORIGINAL_TYPES.includes(w.originalType)) {
     errors.push(`work "${w.id}": originalType must be one of ${ORIGINAL_TYPES.join("|")} (got "${w.originalType}")`);
@@ -211,12 +228,10 @@ function fullWork(w) {
   return rest;
 }
 
-const QUARTER_ORDER = { winter: 0, spring: 1, summer: 2, fall: 3 };
-
+/** 放送開始クール順。声優の出演歴やシリーズ内の並びは「始まった順」に見たいので、
+ *  一覧の表示・並べ替えに使う latestSeason ではなく season のまま比べる。 */
 function bySeason(a, b) {
-  return (
-    a.season.year - b.season.year || QUARTER_ORDER[a.season.quarter] - QUARTER_ORDER[b.season.quarter]
-  );
+  return seasonKey(a.season) - seasonKey(b.season);
 }
 
 function groupWorksBy(idsOf) {
