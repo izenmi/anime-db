@@ -15,7 +15,7 @@ import time
 from pathlib import Path
 
 from anilist import SLEEP, query
-from harvest_anilist import COMPOSER_ROLES, DIRECTOR_ROLES, DEFAULT_POOL, person
+from harvest_anilist import COMPOSER_ROLES, DIRECTOR_ROLES, DEFAULT_POOL, person, role_key
 
 GQL = """
 query ($ids: [Int], $page: Int) {
@@ -46,7 +46,9 @@ def main():
     todo = [p["aid"] for p in pool if not p["dir"]]
     print(f"{len(todo)}/{len(pool)} entries missing a director", flush=True)
 
-    page = 2
+    # 1ページ目もやり直す。harvest 時点の役職判定が `Director (eps 1-278)` を
+    # 取りこぼしていたため、1ページ目に監督がいる長期シリーズが埋まっていない。
+    page = int(arg("--from-page", "1"))
     while todo and page <= max_page:
         still, more_pages = [], False
         for i in range(0, len(todo), CHUNK):
@@ -65,7 +67,7 @@ def main():
                     continue
                 staff = m.get("staff") or {}
                 for e in staff.get("edges") or []:
-                    role = (e.get("role") or "").strip().lower()
+                    role = role_key(e.get("role"))
                     if role in DIRECTOR_ROLES:
                         rec["dir"].append(person(e["node"]))
                     elif role in COMPOSER_ROLES and not rec["comp"]:

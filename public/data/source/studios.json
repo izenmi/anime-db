@@ -3517,5 +3517,50 @@
     "externalLinks": {},
     "sourceNote": "AniListの作品クレジット(2026-08-09取得)から登録。",
     "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "tokyo-movie",
+    "name": "Tokyo Movie",
+    "nameKana": "とうきょうむーびー",
+    "description": "アニメーション制作会社。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-09取得)から登録。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "albacrow",
+    "name": "ALBACROW",
+    "nameKana": "あるばくろう",
+    "description": "アニメーション制作会社。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-09取得)から登録。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "blaze-studio",
+    "name": "Blaze Studio",
+    "nameKana": "ぶれいずすたじお",
+    "description": "アニメーション制作会社。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-09取得)から登録。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "plum",
+    "name": "Plum",
+    "nameKana": "ぷらむ",
+    "description": "アニメーション制作会社。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-09取得)から登録。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "linq",
+    "name": "LinQ",
+    "nameKana": "りんく",
+    "description": "アニメーション制作会社。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-09取得)から登録。",
+    "updatedAt": "2026-08-09"
   }
 ]

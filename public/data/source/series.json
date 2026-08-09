@@ -1,13 +1,66 @@
 [
   {
-    "id": "monogatari",
-    "name": "〈物語〉シリーズ",
-    "nameKana": "ものがたりしりーず",
-    "description": "西尾維新の小説を原作とするアニメシリーズ。『化物語』(2009)に始まり、怪異と少年少女の物語をシャフトが映像化し続けている。",
+    "id": "idolmaster",
+    "name": "アイドルマスターシリーズ",
+    "nameKana": "あいどるますたーしりーず",
+    "description": "芸能事務所に所属する少女たちの成長を描く作品群。育成ゲームを原作とする。",
     "externalLinks": {
-      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E7%89%A9%E8%AA%9E%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA"
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC"
     },
-    "sourceNote": "Wikipedia日本語版で裏取り(2026-08-09)。",
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "aquarion",
+    "name": "アクエリオンシリーズ",
+    "nameKana": "あくえりおんしりーず",
+    "description": "三体で合体する機体と、輪廻を繰り返す男女の因縁を描く作品群。作品ごとに時代と登場人物が入れ替わる。",
+    "externalLinks": {},
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "gundam",
+    "name": "ガンダムシリーズ",
+    "nameKana": "がんだむしりーず",
+    "description": "1979年の『機動戦士ガンダム』に始まる巨大ロボットアニメの系譜。宇宙世紀を舞台とする作品群と、独立した世界観を持つ作品群が並行して作られている。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%B3%E3%83%80%E3%83%A0%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "patlabor",
+    "name": "機動警察パトレイバーシリーズ",
+    "nameKana": "きどうけいさつぱとれいばーしりーず",
+    "description": "作業用ロボットが普及した近未来を舞台に、警察の特車二課を描く作品群。日常と犯罪捜査が同居する。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E6%A9%9F%E5%8B%95%E8%AD%A6%E5%AF%9F%E3%83%91%E3%83%88%E3%83%AC%E3%82%A4%E3%83%90%E3%83%BC"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "gegege",
+    "name": "ゲゲゲの鬼太郎シリーズ",
+    "nameKana": "げげげのきたろうしりーず",
+    "description": "水木しげるの漫画を原作とする妖怪作品の系譜。時代ごとに作り直され、そのつど作風が変わる。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E3%82%B2%E3%82%B2%E3%82%B2%E3%81%AE%E9%AC%BC%E5%A4%AA%E9%83%8E"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "ghost-in-the-shell",
+    "name": "攻殻機動隊シリーズ",
+    "nameKana": "こうかくきどうたいしりーず",
+    "description": "電脳化と義体化が普及した近未来を舞台に、公安の実働部隊が事件を追う作品群。作品ごとに独立した解釈が与えられている。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E6%94%BB%E6%AE%BB%E6%A9%9F%E5%8B%95%E9%9A%8A"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
     "updatedAt": "2026-08-09"
   },
   {
@@ -19,6 +72,191 @@
       "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E3%80%88%E5%8F%A4%E5%85%B8%E9%83%A8%E3%80%89%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA"
     },
     "sourceNote": "Wikipedia日本語版で裏取り(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "sengoku-basara",
+    "name": "戦国BASARAシリーズ",
+    "nameKana": "せんごくばさらしりーず",
+    "description": "戦国武将を大胆に脚色したアクションゲームを原作とする作品群。学園を舞台にした番外編もある。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E6%88%A6%E5%9B%BDBASARA"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "tales",
+    "name": "テイルズ オブ シリーズ",
+    "nameKana": "ているずおぶしりーず",
+    "description": "同名のロールプレイングゲームを原作とする作品群。作品ごとに独立した世界と主人公を持つ。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E3%83%86%E3%82%A4%E3%83%AB%E3%82%BA%20%E3%82%AA%E3%83%96%20%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "digimon",
+    "name": "デジモンシリーズ",
+    "nameKana": "でじもんしりーず",
+    "description": "デジタル世界の生き物と子どもたちの絆を描く作品群。作品ごとに世界設定と登場人物が刷新される。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B8%E3%83%A2%E3%83%B3%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "toaru",
+    "name": "とあるシリーズ",
+    "nameKana": "とあるしりーず",
+    "description": "超能力者を育成する学園都市を共通の舞台とする作品群。科学と魔術という二つの側面から描かれる。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E3%81%A8%E3%81%82%E3%82%8B%E9%AD%94%E8%A1%93%E3%81%AE%E7%A6%81%E6%9B%B8%E7%9B%AE%E9%8C%B2"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "dot-hack",
+    "name": ".hackシリーズ",
+    "nameKana": "どっとはっくしりーず",
+    "description": "仮想空間のオンラインゲーム「The World」を共通の舞台とする作品群。ゲームと現実の境界で起こる異常を描く。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/.hack"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "doraemon",
+    "name": "ドラえもん劇場版シリーズ",
+    "nameKana": "どらえもんげきじょうばんしりーず",
+    "description": "未来から来た猫型ロボットと少年たちの冒険を描く劇場作品の系譜。毎作ちがう世界へ旅立つ。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%83%A9%E3%81%88%E3%82%82%E3%82%93"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "fate",
+    "name": "Fateシリーズ",
+    "nameKana": "ふぇいとしりーず",
+    "description": "TYPE-MOONの伝奇作品を原作とする系譜。願いを叶える聖杯を巡り、英霊を従えた魔術師たちが戦う。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/Fate%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "free",
+    "name": "Free!シリーズ",
+    "nameKana": "ふりーしりーず",
+    "description": "水泳に打ち込む高校生たちを描く作品群。過去と現在を行き来しながら、同じ人物の別の時期が描かれる。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/Free%21%20%28%E3%82%A2%E3%83%8B%E3%83%A1%29"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "blood",
+    "name": "BLOODシリーズ",
+    "nameKana": "ぶらっどしりーず",
+    "description": "刀を振るう少女と、人に紛れて生きる異形の存在を描く作品群。作品ごとに時代も設定も大きく変わる。",
+    "externalLinks": {},
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "precure",
+    "name": "プリキュアシリーズ",
+    "nameKana": "ぷりきゅあしりーず",
+    "description": "2004年の『ふたりはプリキュア』に始まる女児向け変身ヒロイン作品の系譜。毎年主人公と世界観を入れ替えながら続いている。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AA%E3%82%AD%E3%83%A5%E3%82%A2%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "pretty-series",
+    "name": "プリティーシリーズ",
+    "nameKana": "ぷりてぃーしりーず",
+    "description": "筐体ゲームを原作とする女児向けの作品群。歌と装いを競う舞台を共通の題材とする。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AA%E3%83%86%E3%82%A3%E3%83%BC%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "beyblade",
+    "name": "ベイブレードシリーズ",
+    "nameKana": "べいぶれーどしりーず",
+    "description": "改造した独楽を戦わせる競技を題材とする作品群。玩具の世代交代に合わせて主人公と機体が刷新される。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E3%83%99%E3%82%A4%E3%83%96%E3%83%AC%E3%83%BC%E3%83%89"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "persona",
+    "name": "ペルソナシリーズ",
+    "nameKana": "ぺるそなしりーず",
+    "description": "内面の人格を具現化して戦うロールプレイングゲームを原作とする作品群。作品ごとに主人公と事件が異なる。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E3%83%9A%E3%83%AB%E3%82%BD%E3%83%8A%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "macross",
+    "name": "マクロスシリーズ",
+    "nameKana": "まくろすしりーず",
+    "description": "1982年の『超時空要塞マクロス』に始まるSFアニメの系譜。可変戦闘機と歌、そして三角関係を共通の柱とする。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%AF%E3%83%AD%E3%82%B9%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "monogatari",
+    "name": "〈物語〉シリーズ",
+    "nameKana": "ものがたりしりーず",
+    "description": "西尾維新の小説を原作とするアニメシリーズ。『化物語』(2009)に始まり、怪異と少年少女の物語をシャフトが映像化し続けている。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E7%89%A9%E8%AA%9E%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA"
+    },
+    "sourceNote": "Wikipedia日本語版で裏取り(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "yu-gi-oh",
+    "name": "遊☆戯☆王シリーズ",
+    "nameKana": "ゆうぎおうしりーず",
+    "description": "カードゲームによる決闘を軸とする作品群。作品ごとに主人公と時代設定が変わり、新しい競技形式が導入される。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E9%81%8A%E2%98%86%E6%88%AF%E2%98%86%E7%8E%8B"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "love-live",
+    "name": "ラブライブ!シリーズ",
+    "nameKana": "らぶらいぶしりーず",
+    "description": "廃校の危機や無名の学校を舞台に、少女たちがスクールアイドルとして立ち上がる作品群。作品ごとに舞台と登場人物が入れ替わる。",
+    "externalLinks": {
+      "wikipediaUrl": "https://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%96%E3%83%A9%E3%82%A4%E3%83%96%21%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA"
+    },
+    "sourceNote": "Wikipedia日本語版で構成作品を確認(2026-08-09)。",
     "updatedAt": "2026-08-09"
   }
 ]

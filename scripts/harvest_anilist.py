@@ -70,6 +70,16 @@ query ($page: Int, $perPage: Int, $country: CountryCode) {
 # 監督ロールは Director / Chief Director のみ(Episode/Assistant/Sound Director を混ぜない)
 DIRECTOR_ROLES = ("director", "chief director", "general director")
 COMPOSER_ROLES = ("series composition",)
+
+
+def role_key(role: str) -> str:
+    """AniListの役職名から話数の注記を落として比較用に正規化する。
+
+    長期シリーズは `Director (eps 1-278)` のように担当話数が付く。ここを見落とすと
+    『ONE PIECE』『名探偵コナン』『銀魂』のような大作が丸ごと監督なしと判定され、
+    stage が skip.json に落としてしまう(実際に140作品を取りこぼした)。
+    """
+    return re.sub(r"\s*\([^()]*\)\s*$", "", (role or "")).strip().lower()
 # 続編であることがタイトルに書いてあるもの。前方一致判定は『地獄楽』のような短いタイトルだと
 # 閾値(3文字)に届かず素通りするため、マーカーによる明示的な除外を併用する。第1期が未登録でも
 # 「第2期をシリーズ代表として登録する」のは避けたいので、マーカーが出たら無条件で捨てる。
@@ -208,9 +218,9 @@ def condense(m) -> dict:
     directors, composers = [], []
     for e in (m.get("staff") or {}).get("edges") or []:
         role = (e.get("role") or "").strip().lower()
-        if role in DIRECTOR_ROLES:
+        if role_key(role) in DIRECTOR_ROLES:
             directors.append(person(e["node"]))
-        elif role in COMPOSER_ROLES:
+        elif role_key(role) in COMPOSER_ROLES:
             composers.append(person(e["node"]))
     cast = []
     for e in (m.get("characters") or {}).get("edges") or []:

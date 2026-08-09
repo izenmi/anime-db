@@ -14413,5 +14413,175 @@
     "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b5945-uUfPaLuNDk6F.jpg",
     "matchedTitle": "エレメントハンター",
     "anilistId": 5945
+  },
+  "one-piece": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg",
+    "matchedTitle": "ONE PIECE",
+    "anilistId": 21
+  },
+  "black-clover": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png",
+    "matchedTitle": "ブラッククローバー",
+    "anilistId": 97940
+  },
+  "gintama": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx918-iOaeBVUn4uK7.jpg",
+    "matchedTitle": "銀魂",
+    "anilistId": 918
+  },
+  "boruto-naruto-next-generations": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97938-BnF6M5yTaNB1.jpg",
+    "matchedTitle": "BORUTO-ボルト- NARUTO NEXT GENERATIONS",
+    "anilistId": 97938
+  },
+  "inuyasha": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx249-jVBkyLnBvnRE.png",
+    "matchedTitle": "犬夜叉",
+    "anilistId": 249
+  },
+  "lucky-star": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1887-P36Pucd4qKji.png",
+    "matchedTitle": "らき☆すた",
+    "anilistId": 1887
+  },
+  "world-trigger": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20729-DnBXnUxFon1B.png",
+    "matchedTitle": "ワールドトリガー",
+    "anilistId": 20729
+  },
+  "uzumaki": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx111314-ui2D6cvpNumy.jpg",
+    "matchedTitle": "うずまき",
+    "anilistId": 111314
+  },
+  "meitantei-conan": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx235-MyYT7K3chBdO.jpg",
+    "matchedTitle": "名探偵コナン",
+    "anilistId": 235
+  },
+  "aoi-bungaku-series": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7193-gC4ULfgsznxh.png",
+    "matchedTitle": "青い文学シリーズ",
+    "anilistId": 7193
+  },
+  "fujimoto-tatsuki-17-26": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198188-h3w6uICVNhqh.png",
+    "matchedTitle": "藤本タツキ 17-26",
+    "anilistId": 198188
+  },
+  "versailles-no-bara": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx338-dyRsnLdTLZGM.png",
+    "matchedTitle": "ベルサイユのばら",
+    "anilistId": 338
+  },
+  "eyeshield-21": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15-A4F2t0TgWoi4.png",
+    "matchedTitle": "アイシールド21",
+    "anilistId": 15
+  },
+  "hikaru-no-go": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135-egPcTb3lAnbu.jpg",
+    "matchedTitle": "ヒカルの碁",
+    "anilistId": 135
+  },
+  "maison-ikkoku": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx1453-mghhMKzxEVcQ.jpg",
+    "matchedTitle": "めぞん一刻",
+    "anilistId": 1453
+  },
+  "crayon-shin-chan": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b966-QUCdKAk4ls9J.jpg",
+    "matchedTitle": "クレヨンしんちゃん",
+    "anilistId": 966
+  },
+  "dolls-frontline": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx128828-Lhulr8Niitey.png",
+    "matchedTitle": "ドールズフロントライン",
+    "anilistId": 128828
+  },
+  "ayakashi-japanese-classic-horror": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx586-alDXEdRVYNU1.png",
+    "matchedTitle": "怪～ayakashi～ Japanese Classic Horror",
+    "anilistId": 586
+  },
+  "18if": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx98512-iF0yiG1Gj40t.jpg",
+    "matchedTitle": "18if",
+    "anilistId": 98512
+  },
+  "meikyuu-monogatari": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1951-88OR0FQqiYiL.jpg",
+    "matchedTitle": "迷宮物語",
+    "anilistId": 1951
+  },
+  "yu-gi-oh-vrains": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx98231-mPVCPWmg3KiL.png",
+    "matchedTitle": "遊☆戯☆王VRAINS",
+    "anilistId": 98231
+  },
+  "a3-season-spring-summer": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107651-K5ykEuUbcQbn.png",
+    "matchedTitle": "A3! SEASON SPRING ＆ SUMMER",
+    "anilistId": 107651
+  },
+  "genius-party": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx3508-zfk3BhdhfMiH.jpg",
+    "matchedTitle": "ジーニアスパーティー",
+    "anilistId": 3508
+  },
+  "short-peace": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b17677-6xKMJSVCteVW.jpg",
+    "matchedTitle": "SHORT PEACE",
+    "anilistId": 17677
+  },
+  "kochira-katsushikaku-kameari-kouenmae-hashutsujo-tv": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx3545-rhUDPxf7DsBQ.png",
+    "matchedTitle": "こちら葛飾区亀有公園前派出所 (1996)",
+    "anilistId": 3545
+  },
+  "meitantei-holmes": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1972-r2VNEnzoA7P7.jpg",
+    "matchedTitle": "名探偵ホームズ",
+    "anilistId": 1972
+  },
+  "wolverine": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/6918.jpg",
+    "matchedTitle": "ウルヴァリン",
+    "anilistId": 6918
+  },
+  "gallery-fake": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx364-kLB2uJHqXodf.jpg",
+    "matchedTitle": "ギャラリーフェイク",
+    "anilistId": 364
+  },
+  "rinshi-ekoda-chan": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104009-Af3Epiow2VQh.jpg",
+    "matchedTitle": "臨死!!江古田ちゃん",
+    "anilistId": 104009
+  },
+  "breakers": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113851-BKAhdzil2CIp.png",
+    "matchedTitle": "ブレーカーズ",
+    "anilistId": 113851
+  },
+  "yuugo-negotiator": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1246-df5amcJVMnsN.png",
+    "matchedTitle": "勇午 〜交渉人〜",
+    "anilistId": 1246
+  },
+  "wei-kreuz": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/447.jpg",
+    "matchedTitle": "Weiß kreuz　ヴァイス　クロイツ",
+    "anilistId": 447
+  },
+  "miru-watashi-no-mirai": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166373-97U2bjAxD3l7.jpg",
+    "matchedTitle": "未ル わたしのみらい",
+    "anilistId": 166373
+  },
+  "jungle-taitei": {
+    "coverUrl": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/1572-IIMmL0Mpbpop.png",
+    "matchedTitle": "ジャングル大帝",
+    "anilistId": 1572
   }
 }
