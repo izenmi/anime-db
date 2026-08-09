@@ -4,7 +4,7 @@ import { getWork, getWorks } from "../../data/manifest";
 import { useAsyncData } from "../common/useAsyncData";
 import { Loading, ErrorState, EmptyState } from "../common/Status";
 import { WorkCard } from "../common/WorkCard";
-import { WorkCover, amazonSearchUrl } from "../common/WorkCover";
+import { WorkCover, amazonSearchUrl, danimeSearchUrl, netflixSearchUrl, primeVideoSearchUrl } from "../common/WorkCover";
 import { BASE_PATH, DEFAULT_OG_IMAGE, SITE_NAME, breadcrumbJsonLd, useSeo } from "../common/useSeo";
 import { FORMAT_LABEL, ORIGINAL_TYPE_LABEL, STATUS_LABEL, seasonLabel } from "../common/labels";
 import type { WorkGenerated } from "../../types";
@@ -89,6 +89,30 @@ export function WorkDetailPage() {
           <div className="work-detail__hero">
             <div className="work-detail__hero-cover">
               <WorkCover title={state.data.title} coverUrl={state.data.coverUrl} size="lg" />
+              <a
+                className="cover-link"
+                href={netflixSearchUrl(state.data.title)}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Netflixで探す
+              </a>
+              <a
+                className="cover-link"
+                href={primeVideoSearchUrl(state.data.title)}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Prime Videoで探す
+              </a>
+              <a
+                className="cover-link"
+                href={danimeSearchUrl(state.data.title)}
+                target="_blank"
+                rel="noreferrer"
+              >
+                dアニメストアで探す
+              </a>
               <a
                 className="cover-link"
                 href={amazonSearchUrl(state.data.title, "Blu-ray")}

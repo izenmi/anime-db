@@ -42,6 +42,7 @@ TVアニメ・劇場アニメを制作スタジオ・監督・シリーズ構成
 ## 購入リンク・画像
 
 - 購入リンクは`amazonSearchUrl(title, "Blu-ray")`(`src/ui/common/WorkCover.tsx`)の検索URLのみ。アフィリエイトタグ`izenmi-22`(姉妹サイト共通)。ISBNベースの直リンク機構は書籍でないため撤去した
+- **配信リンクも検索URL方式のみ**(movie-dbと同じ思想): `netflixSearchUrl`/`primeVideoSearchUrl`(Amazonの`i=instant-video`検索、アフィリエイトタグ有効)/`danimeSearchUrl`(dアニメストア`sch_pc?searchKey=`)。配信有無はラインアップ変動で誤リンク化するため意図的にデータ化しない
 - キービジュアルはAniListのcoverImage(縦長460×650前後)で、既存の表紙枠CSSがそのまま合う。**公式商品画像ではなくキーアートの転載になるため、Aboutページに出典と削除対応の記載を置いている**。楽天ブックス/Kobo/BOOK☆WALKER経路は書籍でないため使っていない(楽天の認証情報も本サイトでは不要)
 
 ## デザイン方針
