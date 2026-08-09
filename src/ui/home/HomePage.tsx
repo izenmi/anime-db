@@ -131,7 +131,7 @@ export function HomePage() {
   useSeo({
     description:
       state.status === "ready"
-        ? `TVアニメ・劇場アニメ${state.data.works}作品を制作スタジオ・監督・声優・放送クール・受賞歴・テーマから検索できるファンデータベース。`
+        ? `TVアニメ・劇場アニメ・OVA・ONA${state.data.works}作品を制作スタジオ・監督・声優・放送クール・受賞歴・テーマから検索できるファンデータベース。`
         : undefined,
     jsonLd: {
       "@context": "https://schema.org",
@@ -150,7 +150,7 @@ export function HomePage() {
     <div className="page">
       <div className="home-hero">
         <h1 className="font-display">アニメDB</h1>
-        <p className="page-subtitle">TVアニメ・劇場アニメをスタジオ・監督・声優・放送クールから探せるデータベース</p>
+        <p className="page-subtitle">TVアニメ・劇場アニメ・OVA・ONAをスタジオ・監督・声優・放送クールから探せるデータベース</p>
         <p className="home-intro">
           次に観るアニメ探しに使えるデータベースです。テーマ・スタジオ・監督・声優・放送クールなどで絞り込めます。
         </p>

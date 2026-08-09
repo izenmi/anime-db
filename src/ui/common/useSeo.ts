@@ -5,7 +5,7 @@ export const SITE_ORIGIN = "https://izenmi.github.io";
 export const BASE_PATH = import.meta.env.BASE_URL;
 export const SITE_URL = `${SITE_ORIGIN}${BASE_PATH}`;
 export const DEFAULT_DESCRIPTION =
-  "TVアニメ・劇場アニメを制作スタジオ・監督・声優・放送クール・受賞歴・テーマから検索できるファンデータベース。";
+  "TVアニメ・劇場アニメ・OVA・ONAを制作スタジオ・監督・声優・放送クール・受賞歴・テーマから検索できるファンデータベース。";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}og-image.png`;
 
 function setMeta(attr: "name" | "property", key: string, content: string) {

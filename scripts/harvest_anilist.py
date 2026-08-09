@@ -39,7 +39,7 @@ GQL = """
 query ($page: Int, $perPage: Int, $country: CountryCode) {
   Page(page: $page, perPage: $perPage) {
     pageInfo { hasNextPage }
-    media(type: ANIME, countryOfOrigin: $country, format_in: [TV, TV_SHORT, MOVIE],
+    media(type: ANIME, countryOfOrigin: $country, format_in: [TV, TV_SHORT, MOVIE, OVA, ONA],
           sort: POPULARITY_DESC) {
       id
       title { native romaji }
@@ -87,6 +87,9 @@ SEQUEL_TITLE_RE = re.compile(
     r"第[2-9２-９二三四五六七八九十]+期|[2-9２-９]期|セカンドシーズン|サードシーズン|ファイナルシーズン"
     r"|(?:2nd|3rd|4th|5th|second|third|fourth|final)\s+season|season\s*[2-9]|part\s*[2-9]"
     r"|\bii+\b\s*$", re.I)
+# AniListのformat → works.jsonのformat。TV_SHORTは尺が短いだけのTV放送なのでtvに寄せる。
+FORMAT_MAP = {"MOVIE": "movie", "OVA": "ova", "ONA": "ona", "TV": "tv", "TV_SHORT": "tv"}
+
 # TVシリーズの劇場版・総集編は登録しない(単独の劇場作品のみ format: movie で登録する)
 MOVIE_SPINOFF_RE = re.compile(
     r"劇場版|劇場編|総集編|^映画[\s　]|特別編集版|gekijou|gekijō|compilation|recap|the movie|movie \d", re.I)
@@ -239,7 +242,7 @@ def condense(m) -> dict:
         "aid": m["id"],
         "t": (m.get("title") or {}).get("native"),
         "r": (m.get("title") or {}).get("romaji"),
-        "fmt": "movie" if m.get("format") == "MOVIE" else "tv",
+        "fmt": FORMAT_MAP.get(m.get("format"), "tv"),
         "y": m.get("seasonYear") or (m.get("startDate") or {}).get("year"),
         "q": quarter_of(m),
         "ep": m.get("episodes"),

@@ -120,8 +120,8 @@ def main():
             if ar.get("awardId") not in award_ids:
                 missing.append(f"awardId:{ar.get('awardId')}")
 
-        if w.get("format") not in ("tv", "movie"):
-            missing.append(f"format must be tv/movie (got {w.get('format')!r})")
+        if w.get("format") not in ("tv", "movie", "ova", "ona"):
+            missing.append(f"format must be tv/movie/ova/ona (got {w.get('format')!r})")
         season = w.get("season") or {}
         if not isinstance(season.get("year"), int) or season.get("quarter") not in QUARTERS:
             missing.append(f"season must be {{year, quarter: winter|spring|summer|fall}} (got {season!r})")

@@ -3571,5 +3571,41 @@
     "externalLinks": {},
     "sourceNote": "AniListの作品クレジット(2026-08-09取得)から登録。",
     "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "enishiya",
+    "name": "ENISHIYA",
+    "nameKana": "えにしや",
+    "description": "アニメーション制作会社。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-09取得)から登録。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "animation-studio42",
+    "name": "animation studio42",
+    "nameKana": "あにめーしょんすたじおふぉーてぃーつー",
+    "description": "アニメーション制作会社。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-09取得)から登録。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "studio-chromato",
+    "name": "Studio Chromato",
+    "nameKana": "すたじおくろまーと",
+    "description": "アニメーション制作会社。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-09取得)から登録。",
+    "updatedAt": "2026-08-09"
+  },
+  {
+    "id": "studio-kafka",
+    "name": "Studio Kafka",
+    "nameKana": "すたじおかふか",
+    "description": "アニメーション制作会社。",
+    "externalLinks": {},
+    "sourceNote": "AniListの作品クレジット(2026-08-09取得)から登録。",
+    "updatedAt": "2026-08-09"
   }
 ]
