@@ -2,15 +2,15 @@ import { useParams } from "react-router-dom";
 import { getStudio } from "../../data/manifest";
 import { useAsyncData } from "../common/useAsyncData";
 import { Loading, ErrorState, EmptyState } from "../common/Status";
-import { WorkCard } from "../common/WorkCard";
 import { useWorkFilter } from "../common/useWorkFilter";
 import { BASE_PATH, SITE_NAME, breadcrumbJsonLd, useSeo } from "../common/useSeo";
+import { WorkGrid } from "../common/WorkGrid";
 
 export function StudioDetailPage() {
   const { id } = useParams<{ id: string }>();
   const state = useAsyncData(() => getStudio(id!), [id]);
   const studio = state.status === "ready" ? state.data : undefined;
-  const { sorted, controls, hasActiveFilters } = useWorkFilter(studio?.works);
+  const { sorted, controls, hasActiveFilters, coverView } = useWorkFilter(studio?.works);
 
   useSeo({
     title: studio?.name,
@@ -57,11 +57,7 @@ export function StudioDetailPage() {
             {hasActiveFilters ? `${sorted.length}件 / 全${state.data.works.length}件` : `${sorted.length}件`}
           </p>
           {sorted.length === 0 && <EmptyState />}
-          <div className="work-grid">
-            {sorted.map((w) => (
-              <WorkCard work={w} key={w.id} />
-            ))}
-          </div>
+          <WorkGrid works={sorted} coverView={coverView} />
         </>
       )}
     </div>

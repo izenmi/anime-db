@@ -2,14 +2,16 @@ import { useParams } from "react-router-dom";
 import { getSeriesItem } from "../../data/manifest";
 import { useAsyncData } from "../common/useAsyncData";
 import { Loading, ErrorState, EmptyState } from "../common/Status";
-import { WorkCard } from "../common/WorkCard";
 import { BASE_PATH, SITE_NAME, breadcrumbJsonLd, useSeo } from "../common/useSeo";
+import { WorkGrid } from "../common/WorkGrid";
+import { useCoverView } from "../common/useCoverView";
 
 /** シリーズの作品を新しい順(放送順の逆)固定で表示する。最新作から辿れるほうが探しやすい
  *  という判断で、キャスト詳細と同じ思想でソート切替は置かない。 */
 export function SeriesDetailPage() {
   const { id } = useParams<{ id: string }>();
   const state = useAsyncData(() => getSeriesItem(id!), [id]);
+  const { coverView, toggle } = useCoverView();
   const series = state.status === "ready" ? state.data : undefined;
 
   useSeo({
@@ -46,11 +48,8 @@ export function SeriesDetailPage() {
             </p>
           )}
           {state.data.works.length === 0 && <EmptyState text="作品が登録されていません。" />}
-          <div className="work-grid">
-            {state.data.works.map((w) => (
-              <WorkCard work={w} key={w.id} />
-            ))}
-          </div>
+          <div className="filter-row">{toggle}</div>
+          <WorkGrid works={state.data.works} coverView={coverView} />
         </>
       )}
     </div>

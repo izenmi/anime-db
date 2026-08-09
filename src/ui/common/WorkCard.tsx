@@ -3,6 +3,9 @@ import type { WorkGenerated } from "../../types";
 import { WorkCover } from "./WorkCover";
 import { ORIGINAL_TYPE_LABEL, seasonLabel } from "./labels";
 
+/** カード上のバッジは狭いので、一覧では短い表記を出す(詳細ページは FORMAT_LABEL のまま)。 */
+const FORMAT_BADGE: Record<string, string> = { movie: "劇場", ova: "OVA", ona: "ONA" };
+
 /** Fuller card for the main work list page: key-visual thumbnail on the left, and a right-hand
  *  column (title/director/studio/awards + clickable theme tags). The whole card navigates to
  *  the work page via a "stretched link" (`work-card__cover-link`, an absolutely-positioned
@@ -29,8 +32,10 @@ export function WorkCard({ work }: { work: WorkGenerated }) {
           <span className={`season-badge season-badge--quiet season-badge--${work.season.quarter}`}>
             {seasonLabel(work.season)}
           </span>
-          {work.format === "movie" && (
-            <span className="season-badge season-badge--quiet season-badge--movie">劇場</span>
+          {work.format !== "tv" && (
+            <span className="season-badge season-badge--quiet season-badge--movie">
+              {FORMAT_BADGE[work.format]}
+            </span>
           )}
           {" "}
           監督: {work.directorNames.join("・")} / {work.studioNames.join("・")}
@@ -61,5 +66,16 @@ export function WorkCard({ work }: { work: WorkGenerated }) {
         )}
       </div>
     </div>
+  );
+}
+
+/** 表紙表示モード(`?view=covers`)のカード。書影だけを大きく並べる。カード全体がそのまま
+ *  <Link> なので WorkCard のような stretched link は要らない。文字が一切出ないぶん、タイトルは
+ *  `title`(ホバーで出るツールチップ)と `aria-label`(読み上げ・キーボード操作)の両方で補う。 */
+export function WorkCoverCard({ work: item }: { work: WorkGenerated }) {
+  return (
+    <Link to={`/works/${item.id}`} className="work-cover-card" title={item.title} aria-label={item.title}>
+      <WorkCover title={item.title} coverUrl={item.coverUrl} size="xl" />
+    </Link>
   );
 }

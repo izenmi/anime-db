@@ -3,9 +3,10 @@ import { useSearchParams } from "react-router-dom";
 import { getSeries, getStudios, getThemes, getWorks } from "../../data/manifest";
 import { useAsyncData } from "../common/useAsyncData";
 import { Loading, ErrorState, EmptyState } from "../common/Status";
-import { WorkCard } from "../common/WorkCard";
 import { useSeo } from "../common/useSeo";
 import { ORIGINAL_TYPE_LABEL, QUARTER_LABEL, seasonSortKey } from "../common/labels";
+import { WorkGrid } from "../common/WorkGrid";
+import { useCoverView } from "../common/useCoverView";
 
 const ORIGINAL_TYPE_OPTIONS = (Object.entries(ORIGINAL_TYPE_LABEL) as [string, string][]).map(
   ([value, label]) => ({ value, label }),
@@ -19,6 +20,8 @@ const QUARTER_OPTIONS = (Object.entries(QUARTER_LABEL) as [string, string][]).ma
 const FORMAT_OPTIONS = [
   { value: "tv", label: "TVアニメ" },
   { value: "movie", label: "劇場アニメ" },
+  { value: "ova", label: "OVA" },
+  { value: "ona", label: "ONA" },
 ];
 
 const SORT_OPTIONS: { value: string; label: string }[] = [
@@ -96,6 +99,7 @@ function Pager({ page, totalPages, onGoToPage }: { page: number; totalPages: num
 
 export function WorkListPage() {
   const [params, setParams] = useSearchParams();
+  const { coverView, toggle } = useCoverView();
   const q = params.get("q") ?? "";
   const themeId = params.get("theme") ?? "";
   const studioId = params.get("studio") ?? "";
@@ -116,7 +120,7 @@ export function WorkListPage() {
     title: "作品一覧",
     description:
       worksState.status === "ready"
-        ? `TVアニメ・劇場アニメ${worksState.data.length}作品を放送時期・テーマ・スタジオ・原作種別などから検索・絞り込みできます。`
+        ? `TVアニメ・劇場アニメ・OVA・ONA${worksState.data.length}作品を放送時期・テーマ・スタジオ・原作種別などから検索・絞り込みできます。`
         : undefined,
   });
 
@@ -236,7 +240,7 @@ export function WorkListPage() {
           ))}
         </select>
         <select value={format} onChange={(e) => updateParam("format", e.target.value)}>
-          <option value="">TV/劇場で絞り込み</option>
+          <option value="">形式で絞り込み</option>
           {FORMAT_OPTIONS.map((o) => (
             <option value={o.value} key={o.value}>
               {o.label}
@@ -262,6 +266,7 @@ export function WorkListPage() {
             フィルターをクリア
           </button>
         )}
+        {toggle}
       </div>
 
       {worksState.status === "loading" && <Loading />}
@@ -274,11 +279,7 @@ export function WorkListPage() {
           </p>
           {filtered.length === 0 && <EmptyState />}
           {totalPages > 1 && <Pager page={page} totalPages={totalPages} onGoToPage={goToPage} />}
-          <div className="work-grid">
-            {pageItems.map((w) => (
-              <WorkCard work={w} key={w.id} />
-            ))}
-          </div>
+          <WorkGrid works={pageItems} coverView={coverView} />
           {totalPages > 1 && <Pager page={page} totalPages={totalPages} onGoToPage={goToPage} />}
         </>
       )}

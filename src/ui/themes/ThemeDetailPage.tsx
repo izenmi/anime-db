@@ -3,10 +3,11 @@ import { useParams, useSearchParams } from "react-router-dom";
 import { getTheme } from "../../data/manifest";
 import { useAsyncData } from "../common/useAsyncData";
 import { Loading, ErrorState, EmptyState } from "../common/Status";
-import { WorkCard } from "../common/WorkCard";
 import { matchesKeyword, themeOptionsOf } from "../common/useWorkFilter";
 import { BASE_PATH, SITE_NAME, breadcrumbJsonLd, useSeo } from "../common/useSeo";
 import { ORIGINAL_TYPE_LABEL, seasonSortKey } from "../common/labels";
+import { WorkGrid } from "../common/WorkGrid";
+import { useCoverView } from "../common/useCoverView";
 
 const ORIGINAL_TYPE_OPTIONS = (Object.entries(ORIGINAL_TYPE_LABEL) as [string, string][]).map(
   ([value, label]) => ({ value, label }),
@@ -21,6 +22,7 @@ const SORT_OPTIONS: { value: string; label: string }[] = [
 export function ThemeDetailPage() {
   const { id } = useParams<{ id: string }>();
   const state = useAsyncData(() => getTheme(id!), [id]);
+  const { coverView, toggle } = useCoverView();
   const theme = state.status === "ready" ? state.data : undefined;
 
   useSeo({
@@ -144,13 +146,10 @@ export function ThemeDetailPage() {
                 フィルターをクリア
               </button>
             )}
+            {toggle}
           </div>
           {sorted.length === 0 && <EmptyState />}
-          <div className="work-grid">
-            {sorted.map((w) => (
-              <WorkCard work={w} key={w.id} />
-            ))}
-          </div>
+          <WorkGrid works={sorted} coverView={coverView} />
         </>
       )}
     </div>

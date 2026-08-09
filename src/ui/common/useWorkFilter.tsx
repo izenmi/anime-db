@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
+import { useCoverView } from "./useCoverView";
 import type { WorkGenerated } from "../../types";
 import { ORIGINAL_TYPE_LABEL, seasonSortKey } from "./labels";
 
@@ -59,6 +60,7 @@ export function themeOptionsOf(works: WorkGenerated[] | undefined, exclude?: str
 
 export function useWorkFilter(works: WorkGenerated[] | undefined, defaultSort = "year-desc") {
   const [params, setParams] = useSearchParams();
+  const { coverView, gridClassName, toggle } = useCoverView();
   const q = params.get("q") ?? "";
   const originalType = params.get("originalType") ?? "";
   const theme = params.get("theme") ?? "";
@@ -143,8 +145,9 @@ export function useWorkFilter(works: WorkGenerated[] | undefined, defaultSort = 
           フィルターをクリア
         </button>
       )}
+      {toggle}
     </div>
   );
 
-  return { filtered, sorted, controls, hasActiveFilters };
+  return { filtered, sorted, controls, hasActiveFilters, coverView, gridClassName };
 }
