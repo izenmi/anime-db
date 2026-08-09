@@ -127,6 +127,8 @@ stage が skip.json に落として**140作品を丸ごと取りこぼしてい�
 
 - 購入リンクは`amazonSearchUrl(title, "Blu-ray")`(`src/ui/common/WorkCover.tsx`)の検索URLのみ。アフィリエイトタグ`izenmi-22`(姉妹サイト共通)。ISBNベースの直リンク機構は書籍でないため撤去した
 - **配信リンクも検索URL方式のみ**(movie-dbと同じ思想): `netflixSearchUrl`/`primeVideoSearchUrl`(Amazonの`i=instant-video`検索、アフィリエイトタグ有効)/`danimeSearchUrl`(dアニメストア`sch_pc?searchKey=`)。配信有無はラインアップ変動で誤リンク化するため意図的にデータ化しない
+- **AniListのGraphQLのフィールド名とCDNのパス名は1段ずれている**。`coverImage.extraLarge`が返すのは`/cover/large/…`、`large`が`/cover/medium/…`、`medium`が`/cover/small/…`で、**`/cover/extraLarge/`というパスは存在しない**。表紙表示モード(`size="xl"`)でURLを`large`→`extraLarge`に置換していたため、キャッシュの2802件が全部404になっていた(2026-08-09に修正)。fetch-covers.mjsが`extraLarge`を保存している時点でキャッシュのURLが既に最大解像度なので、**フロントでサイズ差し替えをしてはいけない**
+  - キャッシュの375件は`/cover/medium/`のままだが、これはAniList側にそれ以上の解像度が無い作品(`extraLarge`フィールド自体がmediumパスを返す)。再取得しても改善しないので放置でよい
 - キービジュアルはAniListのcoverImage(縦長460×650前後)で、既存の表紙枠CSSがそのまま合う。**公式商品画像ではなくキーアートの転載になるため、Aboutページに出典と削除対応の記載を置いている**。楽天ブックス/Kobo/BOOK☆WALKER経路は書籍でないため使っていない(楽天の認証情報も本サイトでは不要)
 
 ## デザイン方針

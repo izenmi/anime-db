@@ -13,12 +13,12 @@ function colorFor(title: string): (typeof COVER_COLORS)[number] {
  *  placeholder (title on a pastel card) when absent or the image fails to load. We don't host
  *  the artwork ourselves; the cache stores AniList CDN URLs, so a broken/removed image
  *  degrades back to the placeholder automatically. */
-/** AniListの書影URLはサイズをパスに持つ(`/cover/large/…`)。一覧のカード用に large を
- *  保存しているので、184x262 で並べる表紙表示では extraLarge に差し替えて粗さを防ぐ。
- *  取得し直す必要はない。想定と違うパスのURLは不一致で素通りする。 */
-function coverSrc(coverUrl: string, size: string): string {
-  return size === "xl" ? coverUrl.replace("/cover/large/", "/cover/extraLarge/") : coverUrl;
-}
+/** 表示サイズによるURLの差し替えはしない。AniListのGraphQLのフィールド名とCDNのパス名は
+ *  1段ずれていて(`coverImage.extraLarge` が返すのは `/cover/large/…`、`large` が `/cover/medium/…`)、
+ *  **`/cover/extraLarge/` というパスは存在しない**。fetch-covers.mjs が extraLarge を保存している
+ *  時点でキャッシュのURLが既に最大解像度なので、そのまま使う。
+ *  (184x262の表紙表示で large→extraLarge に置換して全件404にした事故が2026-08-09にあった。
+ *   `/cover/medium/` のままの作品はAniList側にそれ以上の解像度が無いもので、これも差し替え不可) */
 
 export function WorkCover({
   title,
@@ -34,7 +34,7 @@ export function WorkCover({
     return (
       <img
         className={`work-cover work-cover--${size} work-cover--image`}
-        src={coverSrc(coverUrl, size)}
+        src={coverUrl}
         alt={title}
         loading="lazy"
         onError={() => setBroken(true)}
