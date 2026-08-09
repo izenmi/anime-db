@@ -53,6 +53,12 @@ const SISTER_SITES = [
     url: "https://izenmi.github.io/tech-db/",
     tagline: "ITエンジニア向けの技術書を技術スタック・対象レベル・著者・出版社から探せるデータベース",
   },
+  {
+    key: "movie",
+    name: "映画DB",
+    url: "https://izenmi.github.io/movie-db/",
+    tagline: "邦画・洋画・アニメ映画を制作会社・監督・キャスト・公開年から探せるデータベース",
+  },
 ] as const;
 
 /** Returns up to `count` elements from `works` in random order, without mutating the input. */
