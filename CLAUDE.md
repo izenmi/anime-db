@@ -137,6 +137,7 @@ stage が skip.json に落として**140作品を丸ごと取りこぼしてい�
 - **放送クールバッジ(`.season-badge`、冬=blue/春=sakura/夏=mint/秋=peach/劇場=purple)**はgame-dbの機種バッジと同じ発想の専用小パレット。ただし**作品カードでは`.season-badge--quiet`を併用して枠線だけのラベルにする**(一覧では作品名とスタッフを先に読ませたいため。塗るのは作品詳細だけ)
 - ページ背景は黒一色固定、装飾最小、見出し`M PLUS Rounded 1c`。favicon(`public/favicon.svg`)は黒背景+「ア」の1文字ロゴ(`#ff86ad`)。**mystery-dbと同じ全面塗り(角丸なし)**でアルファを残さない
 - Google Analytics: **設置済み**。anime-db専用のGA4測定ID `G-ESLBDYF7MW` を`index.html`の`<head>`に記載(姉妹サイトのIDは流用しない)
+- Google Search Console: **sitemap登録済み**(2026-08-11、ユーザーが実施)
 
 ## コマンド
 
@@ -171,4 +172,3 @@ node scripts/generate-icons.mjs  # 手動実行
   - **続編・劇場版の受賞は本編エントリに寄せる**(独立エントリを作らない方針のため)。どの期・どの劇場版が受賞したかは`result`に括弧書きで残す
   - **未反映が75件残っている**。内訳は文化庁メディア芸術祭の個人制作短編(収録基準外)、海外作品(『アナと雪の女王』)、そして新劇場版シリーズや続編の劇場版で本編に寄せられなかったもの(『シン・エヴァンゲリオン劇場版』『ラブライブ!The School Idol Movie』等)
 - **`link-sister-works.mjs`(manga-db)へのアニメ原作突合の統合**。現在は`relatedNovelUrl`等を手動設定している(シード26作品中20件設定済み)。逆方向(姉妹サイト側から本サイトへのリンク)は未設定
-- **Google Search Consoleへのsitemap登録**(ユーザー操作が必要)
