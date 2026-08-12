@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import type { SeriesGenerated } from "../../types";
+import type { SeriesGenerated, WorkGenerated } from "../../types";
 import { WorkCover } from "../common/WorkCover";
 import { QUARTER_ORDER, displaySeason, seasonLabel } from "../common/labels";
 
@@ -11,14 +11,14 @@ const STUDIO_COUNT = 2;
  *  トップの作品カードと同じ密度になるよう、キービジュアル・放送クールの範囲・制作スタジオ・
  *  テーマまで出す。
  *
- *  表示する値はすべて `series.works`(build時にクールの昇順で入っている)から導出していて、
+ *  表示する値はすべて渡された作品(build時にクールの昇順で入っている)から導出していて、
  *  シリーズ側に持たせた項目はない。作品を足せばそのまま更新される。 */
-export function SeriesCard({ series }: { series: SeriesGenerated }) {
+export function SeriesCard({ series, works: seriesWorks }: { series: SeriesGenerated; works: WorkGenerated[] }) {
   // series.json の works は新しい順(generate-manifest.mjs)。キービジュアルとスタジオは
   // 第1作から並べたいのでここで放送順に取り直し、クールの範囲もその両端から出す。
   const key = (s: { year: number; quarter: keyof typeof QUARTER_ORDER }) =>
     s.year * 10 + QUARTER_ORDER[s.quarter];
-  const works = [...series.works].sort((a, b) => key(a.season) - key(b.season));
+  const works = [...seriesWorks].sort((a, b) => key(a.season) - key(b.season));
   const first = works[0]?.season;
   const last = works
     .map((w) => displaySeason(w))

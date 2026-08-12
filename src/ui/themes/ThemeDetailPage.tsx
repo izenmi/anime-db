@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
-import { getTheme } from "../../data/manifest";
+import { getTheme, getWorksByIds } from "../../data/manifest";
 import { useAsyncData } from "../common/useAsyncData";
 import { Loading, ErrorState, EmptyState } from "../common/Status";
 import { matchesKeyword, themeOptionsOf } from "../common/useWorkFilter";
@@ -24,6 +24,12 @@ export function ThemeDetailPage() {
   const state = useAsyncData(() => getTheme(id!), [id]);
   const { coverView, toggle } = useCoverView();
   const theme = state.status === "ready" ? state.data : undefined;
+  // 作品の実データは works.json 側にある(ThemeGenerated は workIds のみ)。
+  const worksState = useAsyncData(
+    () => (theme ? getWorksByIds(theme.workIds) : Promise.resolve([])),
+    [theme],
+  );
+  const themeWorks = worksState.status === "ready" ? worksState.data : undefined;
 
   useSeo({
     title: theme?.name,
@@ -51,20 +57,20 @@ export function ThemeDetailPage() {
   const sort = params.get("sort") ?? "year-desc";
 
   const options = useMemo(
-    () => themeOptionsOf(state.status === "ready" ? state.data?.works : undefined, id),
-    [state, id],
+    () => themeOptionsOf(themeWorks, id),
+    [themeWorks, id],
   );
 
   const filtered = useMemo(() => {
-    if (state.status !== "ready" || !state.data) return [];
+    if (!themeWorks) return [];
     const keyword = q.trim().toLowerCase();
-    return state.data.works.filter((w) => {
+    return themeWorks.filter((w) => {
       if (!matchesKeyword(w, keyword)) return false;
       if (other && !w.themeIds.includes(other)) return false;
       if (originalType && w.originalType !== originalType) return false;
       return true;
     });
-  }, [state, originalType, q, other]);
+  }, [themeWorks, originalType, q, other]);
 
   const sorted = useMemo(() => {
     if (sort === "year-asc") return [...filtered].sort((a, b) => seasonSortKey(a) - seasonSortKey(b));

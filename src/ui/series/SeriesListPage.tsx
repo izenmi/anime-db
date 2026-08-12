@@ -1,4 +1,4 @@
-import { getSeries } from "../../data/manifest";
+import { getSeries, getWorks } from "../../data/manifest";
 import { useAsyncData } from "../common/useAsyncData";
 import { Loading, ErrorState } from "../common/Status";
 import { useSeo } from "../common/useSeo";
@@ -6,6 +6,13 @@ import { SeriesCard } from "./SeriesCard";
 
 export function SeriesListPage() {
   const state = useAsyncData(getSeries, []);
+  // カードのキービジュアル・スタジオ・テーマは works.json 側にある(SeriesGenerated は workIds のみ)。
+  const worksState = useAsyncData(getWorks, []);
+  const worksById = new Map(
+    (worksState.status === "ready" ? worksState.data : []).map((w) => [w.id, w]),
+  );
+  const worksOf = (ids: string[]) =>
+    ids.map((id) => worksById.get(id)).filter((w) => w !== undefined);
 
   useSeo({
     title: "シリーズ一覧",
@@ -25,7 +32,7 @@ export function SeriesListPage() {
           <p className="page-subtitle">{state.data.length}シリーズ</p>
           <div className="series-grid">
             {state.data.map((x) => (
-              <SeriesCard series={x} key={x.id} />
+              <SeriesCard series={x} works={worksOf(x.workIds)} key={x.id} />
             ))}
           </div>
         </>

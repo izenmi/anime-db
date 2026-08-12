@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { getVoiceActor } from "../../data/manifest";
+import { getVoiceActor, getWorksByIds } from "../../data/manifest";
 import { useAsyncData } from "../common/useAsyncData";
 import { Loading, ErrorState, EmptyState } from "../common/Status";
 import { WorkCard, WorkCoverCard } from "../common/WorkCard";
@@ -13,6 +13,15 @@ export function VoiceActorDetailPage() {
   const state = useAsyncData(() => getVoiceActor(id!), [id]);
   const actor = state.status === "ready" ? state.data : undefined;
   const { coverView, gridClassName, toggle } = useCoverView();
+
+  // 出演作の実データは works.json 側にある(roles は workId しか持たない)。
+  const worksState = useAsyncData(
+    () => (actor ? getWorksByIds(actor.roles.map((r) => r.workId)) : Promise.resolve([])),
+    [actor],
+  );
+  const worksById = new Map(
+    (worksState.status === "ready" ? worksState.data : []).map((w) => [w.id, w]),
+  );
 
   useSeo({
     title: actor?.name,
@@ -58,12 +67,15 @@ export function VoiceActorDetailPage() {
           {state.data.roles.length === 0 && <EmptyState text="出演作品が登録されていません。" />}
           <div className="filter-row">{toggle}</div>
           <div className={gridClassName}>
-            {state.data.roles.map((role) => (
-              <div key={`${role.work.id}-${role.character}`}>
-                <p className="cast-role-label">{role.character} 役</p>
-                {coverView ? <WorkCoverCard work={role.work} /> : <WorkCard work={role.work} />}
-              </div>
-            ))}
+            {state.data.roles.map((role) => {
+              const work = worksById.get(role.workId);
+              return work ? (
+                <div key={`${role.workId}-${role.character}`}>
+                  <p className="cast-role-label">{role.character} 役</p>
+                  {coverView ? <WorkCoverCard work={work} /> : <WorkCard work={work} />}
+                </div>
+              ) : null;
+            })}
           </div>
         </>
       )}

@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { getSeriesItem } from "../../data/manifest";
+import { getSeriesItem, getWorksByIds } from "../../data/manifest";
 import { useAsyncData } from "../common/useAsyncData";
 import { Loading, ErrorState, EmptyState } from "../common/Status";
 import { BASE_PATH, SITE_NAME, breadcrumbJsonLd, useSeo } from "../common/useSeo";
@@ -13,6 +13,12 @@ export function SeriesDetailPage() {
   const state = useAsyncData(() => getSeriesItem(id!), [id]);
   const { coverView, toggle } = useCoverView();
   const series = state.status === "ready" ? state.data : undefined;
+  // 作品の実データは works.json 側にある(SeriesGenerated は workIds のみ)。
+  const worksState = useAsyncData(
+    () => (series ? getWorksByIds(series.workIds) : Promise.resolve([])),
+    [series],
+  );
+  const seriesWorks = worksState.status === "ready" ? worksState.data : [];
 
   useSeo({
     title: series?.name,
@@ -47,9 +53,9 @@ export function SeriesDetailPage() {
               </a>
             </p>
           )}
-          {state.data.works.length === 0 && <EmptyState text="作品が登録されていません。" />}
+          {seriesWorks.length === 0 && <EmptyState text="作品が登録されていません。" />}
           <div className="filter-row">{toggle}</div>
-          <WorkGrid works={state.data.works} coverView={coverView} />
+          <WorkGrid works={seriesWorks} coverView={coverView} />
         </>
       )}
     </div>

@@ -193,7 +193,9 @@ function relatedIdsFor(item) {
 const relatedById = new Map(works.map((x) => [x.id, relatedIdsFor(x)]));
 
 // ---- generated/works.json ----
-const worksGenerated = works.map((w) => ({
+// あらすじ・出典メモ・updatedAt はここに入れない(作品詳細ページでしか使わないのに
+// works.json の大きな割合を占める)。詳細ページ用は work-texts.json に分ける。
+const worksGenerated = works.map(({ synopsis, sourceNote, updatedAt, ...w }) => ({
   relatedWorkIds: relatedById.get(w.id),
   ...w,
   directorNames: w.directorIds.map((id) => staffById.get(id).name),
@@ -216,17 +218,11 @@ const worksGenerated = works.map((w) => ({
   coverUrl: coversCache[w.id]?.coverUrl ?? undefined,
 }));
 
-// Cross-reference lists (staff/studio/voice-actor/theme pages) embed the full denormalized
-// work — same shape as generated/works.json — so those pages can render a full WorkCard.
-const worksGeneratedById = new Map(worksGenerated.map((w) => [w.id, w]));
-
-function fullWork(w) {
-  // Only the work detail page renders related works, and each work is embedded in several of
-  // these cross-reference lists, so keeping relatedWorkIds out of the embedded copies avoids
-  // a large amount of duplicated ids across generated/.
-  const { relatedWorkIds, ...rest } = worksGeneratedById.get(w.id);
-  return rest;
-}
+// 相互参照リスト(スタッフ・スタジオ・声優・シリーズ・テーマの各詳細ページ)は作品を**idの配列**で
+// 持ち、表示側は works.json(取得済みキャッシュ)から引き直して WorkCard を描く。
+// 作品をフル展開して埋め込むと1作品が複数のリストに重複して入り、themes.json が gzip 5.5MB・
+// voiceActors.json が gzip 4.7MB あった(2026-08-12に是正)。
+const idsBy = (list, cmp) => [...list].sort(cmp).map((w) => w.id);
 
 /** 放送開始クール順。声優の出演歴やシリーズ内の並びは「始まった順」に見たいので、
  *  一覧の表示・並べ替えに使う latestSeason ではなく season のまま比べる。 */
@@ -262,8 +258,8 @@ const staffGenerated = staff
       description: s.description,
       externalLinks: s.externalLinks,
       workCount: uniqueCount,
-      directedWorks: directed.map(fullWork).sort(bySeason),
-      composedWorks: composed.map(fullWork).sort(bySeason),
+      directedWorkIds: idsBy(directed, bySeason),
+      composedWorkIds: idsBy(composed, bySeason),
     };
   })
   .sort((a, b) => a.nameKana.localeCompare(b.nameKana, "ja"));
@@ -280,7 +276,7 @@ const studiosGenerated = studios
       description: s.description,
       externalLinks: s.externalLinks,
       workCount: theirWorks.length,
-      works: theirWorks.map(fullWork).sort(bySeason),
+      workIds: idsBy(theirWorks, bySeason),
     };
   })
   .sort((a, b) => a.nameKana.localeCompare(b.nameKana, "ja"));
@@ -304,7 +300,7 @@ const voiceActorsGenerated = voiceActors
       description: v.description,
       externalLinks: v.externalLinks,
       workCount: roles.length,
-      roles: roles.map((r) => ({ character: r.character, work: fullWork(r.work) })),
+      roles: roles.map((r) => ({ character: r.character, workId: r.work.id })),
     };
   })
   .sort((a, b) => a.nameKana.localeCompare(b.nameKana, "ja"));
@@ -323,7 +319,7 @@ const seriesGenerated = series
       description: x.description,
       externalLinks: x.externalLinks,
       workCount: theirWorks.length,
-      works: theirWorks.map(fullWork).sort((a, b) => bySeason(b, a)),
+      workIds: idsBy(theirWorks, (a, b) => bySeason(b, a)),
     };
   })
   .sort((a, b) => b.workCount - a.workCount || a.nameKana.localeCompare(b.nameKana, "ja"));
@@ -336,10 +332,16 @@ const themesGenerated = themes
     return {
       ...t,
       workCount: theirWorks.length,
-      works: theirWorks.map(fullWork).sort(bySeason),
+      workIds: idsBy(theirWorks, bySeason),
     };
   })
   .sort((a, b) => b.workCount - a.workCount || a.name.localeCompare(b.name, "ja"));
+
+// ---- generated/work-texts.json ----
+// 作品詳細ページだけが読む長文(あらすじ・出典メモ)。キーは作品id。
+const workTexts = Object.fromEntries(
+  works.map((w) => [w.id, { synopsis: w.synopsis, sourceNote: w.sourceNote }]),
+);
 
 // ---- generated/awards.json ----
 // 受賞歴の result は「グランプリ」「作品賞」「第1位」のような自由文なので、
@@ -400,6 +402,7 @@ writeFileSync(path.join(outDir, "voiceActors.json"), JSON.stringify(voiceActorsG
 writeFileSync(path.join(outDir, "series.json"), JSON.stringify(seriesGenerated), "utf-8");
 writeFileSync(path.join(outDir, "themes.json"), JSON.stringify(themesGenerated), "utf-8");
 writeFileSync(path.join(outDir, "awards.json"), JSON.stringify(awardsGenerated), "utf-8");
+writeFileSync(path.join(outDir, "work-texts.json"), JSON.stringify(workTexts), "utf-8");
 writeFileSync(path.join(outDir, "counts.json"), JSON.stringify(counts), "utf-8");
 
 console.log(

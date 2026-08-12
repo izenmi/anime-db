@@ -6,6 +6,24 @@ TVアニメ・劇場アニメ・OVA・ONAを制作スタジオ・監督・シリ
 - リポジトリ: `izenmi/anime-db`(public。GitHub Pagesは無料枠だとpublicでないと使えない)
 - スタック: React 18 + TypeScript + Vite 5 + `react-router-dom`(`BrowserRouter`)
 
+
+### 転送量の設計(2026-08-12。**作品をフル展開して埋め込まない**)
+
+スタッフ・スタジオ・声優・シリーズ・テーマの各生成ファイルは作品を **id** で持ち
+(`workIds` / `directedWorkIds` / `composedWorkIds` / `roles[].workId`)、表示側は
+`getWorksByIds()`(works.json の取得済みキャッシュ)から引き直す。
+あらすじと出典メモは作品詳細でしか使わないので **`work-texts.json`** に分けてある。
+
+以前は作品をフル展開して埋め込んでいたため、`themes.json` が gzip 5.5MB・`voiceActors.json` が
+4.7MB あり、トップページだけで gzip 7.2MB を転送していた。現在は gzip で works 1.09MB /
+work-texts 529KB / voiceActors 277KB / themes 107KB / staff 104KB / studios 51KB / series 5KB。
+
+- **新しい生成ファイルに作品を埋め込みたくなったら、まずidで足りないかを疑う**
+- **作品詳細ページはあらすじが揃うまで「読み込み中」を出し続ける**こと(`prerender.mjs` が
+  「読み込み中」の消滅を待って静的HTMLを書くため、先に描くとあらすじ抜きのHTMLが焼き付く)
+- **`useMemo` の依存配列に注意**。エンティティのstateだけを見ていると、後から解決する作品配列で
+  再計算されず一覧が空になる
+
 ## データモデル上の判断(このサイト固有・最重要)
 
 - **シリーズ単位で1エントリ**。『鬼滅の刃』は1件で、分割クール・続編・派生劇場版は`broadcastNote`(自由記述)に書く

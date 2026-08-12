@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { getStudio } from "../../data/manifest";
+import { getStudio, getWorksByIds } from "../../data/manifest";
 import { useAsyncData } from "../common/useAsyncData";
 import { Loading, ErrorState, EmptyState } from "../common/Status";
 import { useWorkFilter } from "../common/useWorkFilter";
@@ -10,7 +10,14 @@ export function StudioDetailPage() {
   const { id } = useParams<{ id: string }>();
   const state = useAsyncData(() => getStudio(id!), [id]);
   const studio = state.status === "ready" ? state.data : undefined;
-  const { sorted, controls, hasActiveFilters, coverView } = useWorkFilter(studio?.works);
+  // 作品の実データは works.json 側にある(エンティティは workIds しか持たない)。
+  // 取得済みならキャッシュから返るので追加の通信はほぼ発生しない。
+  const resolvedWorksState = useAsyncData(
+    () => (studio ? getWorksByIds(studio.workIds) : Promise.resolve([])),
+    [studio],
+  );
+  const resolvedWorks = resolvedWorksState.status === "ready" ? resolvedWorksState.data : undefined;
+  const { sorted, controls, hasActiveFilters, coverView } = useWorkFilter(resolvedWorks);
 
   useSeo({
     title: studio?.name,
@@ -54,7 +61,7 @@ export function StudioDetailPage() {
           )}
           {controls}
           <p className="page-subtitle">
-            {hasActiveFilters ? `${sorted.length}件 / 全${state.data.works.length}件` : `${sorted.length}件`}
+            {hasActiveFilters ? `${sorted.length}件 / 全${state.data.workCount}件` : `${sorted.length}件`}
           </p>
           {sorted.length === 0 && <EmptyState />}
           <WorkGrid works={sorted} coverView={coverView} />
