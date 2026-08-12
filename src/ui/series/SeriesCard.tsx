@@ -14,15 +14,18 @@ const STUDIO_COUNT = 2;
  *  表示する値はすべて `series.works`(build時にクールの昇順で入っている)から導出していて、
  *  シリーズ側に持たせた項目はない。作品を足せばそのまま更新される。 */
 export function SeriesCard({ series }: { series: SeriesGenerated }) {
-  const works = series.works;
-  // series.json の並び順に依存せず、最古クールと最新クールを自分で取り直す
-  // (シリーズによっては新しい順で入っており、そのままだと「2026年冬〜2005年冬」と逆に出る)。
+  // series.json の works は新しい順(generate-manifest.mjs)。キービジュアルとスタジオは
+  // 第1作から並べたいのでここで放送順に取り直し、クールの範囲もその両端から出す。
   const key = (s: { year: number; quarter: keyof typeof QUARTER_ORDER }) =>
     s.year * 10 + QUARTER_ORDER[s.quarter];
-  const seasons = works.map((w) => w.season);
-  const latest = works.map((w) => displaySeason(w));
-  const first = seasons.length > 0 ? seasons.reduce((a, b) => (key(b) < key(a) ? b : a)) : undefined;
-  const last = latest.length > 0 ? latest.reduce((a, b) => (key(b) > key(a) ? b : a)) : undefined;
+  const works = [...series.works].sort((a, b) => key(a.season) - key(b.season));
+  const first = works[0]?.season;
+  const last = works
+    .map((w) => displaySeason(w))
+    .reduce<ReturnType<typeof displaySeason> | undefined>(
+      (a, b) => (a === undefined || key(b) > key(a) ? b : a),
+      undefined,
+    );
 
   const studios = [...new Set(works.flatMap((w) => w.studioNames))];
   // ネタバレテーマは WorkCard と同じ理由で伏せる(一覧を眺めるだけで割れてしまうため)
