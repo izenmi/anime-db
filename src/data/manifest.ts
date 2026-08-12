@@ -7,6 +7,7 @@ import type {
   ThemeGenerated,
   VoiceActorGenerated,
   WorkGenerated,
+  RecommendIndex,
   WorkTexts,
 } from "../types";
 
@@ -35,6 +36,7 @@ export const getVoiceActors = () => fetchJson<VoiceActorGenerated[]>("voiceActor
 export const getSeries = () => fetchJson<SeriesGenerated[]>("series.json");
 export const getThemes = () => fetchJson<ThemeGenerated[]>("themes.json");
 export const getAwards = () => fetchJson<AwardGenerated[]>("awards.json");
+export const getRecommendIndex = () => fetchJson<RecommendIndex>("recommend-index.json");
 export const getWorkTexts = () => fetchJson<WorkTexts>("work-texts.json");
 export const getCounts = () => fetchJson<Counts>("counts.json");
 

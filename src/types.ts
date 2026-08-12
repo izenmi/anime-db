@@ -238,6 +238,13 @@ export interface AwardGenerated extends AwardSource {
 /** 作品詳細ページだけが読む長文(generated/work-texts.json)。キーは作品id。 */
 export type WorkTexts = Record<string, { synopsis: string; sourceNote: string }>;
 
+/** 「好みからおすすめ」(/recommend)専用の軽量索引(generated/recommend-index.json)。
+ *  tags は件数の多い順、items はspoilerを除いたタグidだけを持つ全作品。 */
+export interface RecommendIndex {
+  tags: { id: string; name: string; count: number }[];
+  items: { id: string; tagIds: string[] }[];
+}
+
 export interface Counts {
   works: number;
   series: number;
