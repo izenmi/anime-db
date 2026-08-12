@@ -990,3 +990,69 @@ h1 {
 .timeline-quarter {
   margin: 14px 0 6px;
 }
+
+
+/* ---- シリーズ一覧のカード ----
+   一覧の各行を、トップの作品カードと同じ密度で見せる。キービジュアルの帯・放送クール・
+   スタジオ・テーマを1枚に収める。sf-db から移植(姉妹サイト共通の実装)。 */
+.series-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.series-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  border: 1px solid var(--color-outline);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.series-card .chip-row {
+  position: relative;
+  z-index: 1;
+}
+
+/* カード幅は可変なので、WorkCover--sm の固定幅をそのまま並べると4枚目が切れる。
+   ここだけ幅を上書きして等分させ、縦横比は object-fit で保つ。 */
+.series-card__covers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.series-card__covers .work-cover {
+  width: 100%;
+  height: 118px;
+  object-fit: cover;
+  flex-shrink: 1;
+}
+
+.series-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.series-card__title {
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.series-card__title .entity-list__count {
+  margin-left: 6px;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .series-grid {
+    grid-template-columns: 1fr;
+  }
+}

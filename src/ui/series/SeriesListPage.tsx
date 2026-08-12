@@ -1,8 +1,8 @@
 import { getSeries } from "../../data/manifest";
 import { useAsyncData } from "../common/useAsyncData";
 import { Loading, ErrorState } from "../common/Status";
-import { EntityList } from "../common/EntityList";
 import { useSeo } from "../common/useSeo";
+import { SeriesCard } from "./SeriesCard";
 
 export function SeriesListPage() {
   const state = useAsyncData(getSeries, []);
@@ -23,7 +23,11 @@ export function SeriesListPage() {
       {state.status === "ready" && (
         <>
           <p className="page-subtitle">{state.data.length}シリーズ</p>
-          <EntityList items={state.data} pathPrefix="/series" />
+          <div className="series-grid">
+            {state.data.map((x) => (
+              <SeriesCard series={x} key={x.id} />
+            ))}
+          </div>
         </>
       )}
     </div>
