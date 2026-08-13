@@ -6,6 +6,7 @@ import { useAsyncData } from "../common/useAsyncData";
 import { Loading, ErrorState, EmptyState } from "../common/Status";
 import { matchesKeyword } from "../common/useWorkFilter";
 import { useCoverView } from "../common/useCoverView";
+import { displaySeason, seasonSortKey } from "../common/labels";
 import { RECOMMEND_COUNT, RecommendGrid, tieBreakKey } from "./RecommendPage";
 
 const MAX_SEEDS = 3;
@@ -30,8 +31,8 @@ function visibleThemes(w: WorkGenerated): string[] {
  *  同監督+0.1(別の式を新造しない — 同じサイトで「似ている」の定義が2つあると詳細ページの並びと
  *  食い違う)。シードが1件のとき、作品詳細の「この作品が好きなら」と同じ順位になるのはこのため。
  *
- *  テーマベクトルを合算してから1回でコサインを取る方式にしないのは、著者ボーナスの意味が
- *  崩れる(どのシードと同著者なのかが混ざる)のと、1件時にビルド側と食い違うため。
+ *  テーマベクトルを合算してから1回でコサインを取る方式にしないのは、制作者ボーナスの意味が
+ *  崩れる(どのシードと同スタジオなのかが混ざる)のと、1件時にビルド側と食い違うため。
  *  N と df を works.json 全件から数えるとビルド側・テーマ起点と完全に同じIDFになる。 */
 function scoreBySeeds(works: WorkGenerated[], seeds: WorkGenerated[]) {
   const n = works.length;
@@ -73,7 +74,7 @@ function scoreBySeeds(works: WorkGenerated[], seeds: WorkGenerated[]) {
 /** 作品起点のおすすめ(`?works=<id>,<id>,<id>`)。
  *
  *  データは works.json だけを使う。専用索引(recommend-index.json)は読まないし拡張もしない —
- *  タイトル・読み・著者idまで足すと索引が数倍に膨れる一方、主要導線(作品詳細の
+ *  タイトル・読み・スタッフidまで足すと索引が数倍に膨れる一方、主要導線(作品詳細の
  *  「この作品が好きなら」からの遷移)では works.json が取得済みキャッシュから返り追加転送ゼロ。
  *  このモードはタブ操作か共有URLでしか開かれないので、プリレンダーが見る素の /recommend
  *  (テーマ起点)には works.json のフェッチも「読み込み中」も発生しない。 */
@@ -122,7 +123,7 @@ export function WorkRecommendSection() {
         (a, b) =>
           prefix(a) - prefix(b) ||
           tieBreakKey(b) - tieBreakKey(a) ||
-          b.season.year - a.season.year ||
+          seasonSortKey(b) - seasonSortKey(a) ||
           a.id.localeCompare(b.id),
       )
       .slice(0, CANDIDATE_COUNT);
@@ -199,7 +200,7 @@ export function WorkRecommendSection() {
             >
               <span className="work-picker__title">{w.title}</span>
               <span className="work-picker__meta">
-                {w.studioNames.join("・")} / {w.directorNames.join("・")} / {w.season.year}年
+                {w.studioNames.join("・")} / {w.directorNames.join("・")} / {displaySeason(w).year}年
               </span>
             </button>
           ))}
